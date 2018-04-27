@@ -1,7 +1,7 @@
 <h1>Fantasy Game Android Project</h1>
 
 <h2>Goal</h2>
-<p>Refactor and complete the FantasyGame project in Java then create an Anroid App to allow users to player.</p>
+<p>Refactor and complete the Fantasy Game project in Java then create an Anroid App to allow users to player.</p>
 
 <h2>MVP</h2>
 <ul>
