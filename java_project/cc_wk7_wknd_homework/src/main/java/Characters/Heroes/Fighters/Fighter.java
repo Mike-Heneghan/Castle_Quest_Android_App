@@ -9,7 +9,7 @@ public abstract class Fighter extends Hero {
     protected Defence defence;
 
     public Fighter(String name){
-        super(name);
+        super(name, "Attacker");
         this.weapon = null;
         this.defence = null;
 

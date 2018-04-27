@@ -7,9 +7,11 @@ import java.util.ArrayList;
 public abstract class Hero extends Character {
 
     private ArrayList<Treasure> inventory;
+    private String type;
 
-    public Hero(String name){
+    public Hero(String name, String type){
         super(name);
+        this.type = type;
         this.inventory = new ArrayList<Treasure>();
         }
 
@@ -35,8 +37,7 @@ public abstract class Hero extends Character {
         return total;
     }
 
-
-
-
-
+    public String getType() {
+        return type;
+    }
 }

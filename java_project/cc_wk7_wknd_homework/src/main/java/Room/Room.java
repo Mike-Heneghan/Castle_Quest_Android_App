@@ -3,6 +3,7 @@ package Room;
 import Characters.Character;
 import Characters.Creatures.Creature;
 import Characters.Creatures.CreatureType;
+import Characters.Heroes.Healers.Cleric;
 import Characters.Heroes.Hero;
 import Characters.Heroes.Treasure;
 
@@ -66,8 +67,11 @@ public class Room {
     //For encounter. The heroes will all have a go at monster and monster will have a go at heroes.
     public void heroesFightMonster(){
         for(Hero hero : heroes){
-            hero.standardMove(monster);
-            monster.standardMove(hero);
+            if (hero.getType() == "Healer"){
+                hero.standardMove(heroes.get(0));
+                monster.standardMove(hero); }
+            else {hero.standardMove(monster);
+            monster.standardMove(hero);}
         }
 
     }
