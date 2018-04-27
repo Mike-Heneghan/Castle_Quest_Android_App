@@ -9,11 +9,13 @@ import Characters.Heroes.Healers.Cleric;
 import Characters.Heroes.Hero;
 import Characters.Heroes.Mages.Spell;
 import Characters.Heroes.Mages.Warlock;
+import Characters.Narrator;
 import Room.Room;
 
 import java.util.ArrayList;
 
 public class Game {
+    private Narrator narrator;
     private String name;
     private ArrayList<Room> rooms;
     private ArrayList<Hero> heroes;
@@ -24,6 +26,7 @@ public class Game {
     private Room room5;
 
     public Game(String name){
+        this.narrator = new Narrator();
         this.name = name;
         this.heroes = new ArrayList<>();
 
