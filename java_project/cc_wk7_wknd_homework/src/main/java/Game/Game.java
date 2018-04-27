@@ -15,7 +15,7 @@ import Room.Room;
 import java.util.ArrayList;
 
 public class Game {
-    private Narrator narrator;
+
     private String name;
     private ArrayList<Room> rooms;
     private ArrayList<Hero> heroes;
@@ -26,7 +26,7 @@ public class Game {
     private Room room5;
 
     public Game(String name){
-        this.narrator = new Narrator();
+
         this.name = name;
         this.heroes = new ArrayList<>();
 

@@ -50,7 +50,8 @@ public abstract class Character {
     }
 
     //move1
-    public void standardMove(Character characterToAttack){
+    public String standardMove(Character characterToAttack){
+    return "";
     }
 
     //move2
