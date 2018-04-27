@@ -10,7 +10,7 @@ public abstract class Mage extends Hero {
     private Creature creature;
 
     public Mage(String name, Spell spell, Creature creature){
-        super(name);
+        super(name, "Attacker");
 //        this.spell = Spell.getRandomSpell();
 //        this.creature = Creature.getRandomCreature();
         //Massive problem still with this random element for newing up objects. Need to fix.

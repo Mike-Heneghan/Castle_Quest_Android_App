@@ -8,7 +8,7 @@ public abstract class Healer extends Hero {
     private HealingTool healingTool;
 
     public Healer(String name){
-        super(name);
+        super(name, "Healer");
         this.healingTool = HealingTool.getRandomHealingTool();
 //
 //
