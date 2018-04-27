@@ -54,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Narrator.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Narrator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Characters/Narrator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="47" lean-forward="true" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+            <state relative-caret-position="269">
+              <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
               <folding>
                 <element signature="e#133#134#0" expanded="true" />
                 <element signature="e#179#180#0" expanded="true" />
@@ -68,6 +68,20 @@
                 <element signature="e#733#734#0" expanded="true" />
                 <element signature="e#764#765#0" expanded="true" />
                 <element signature="e#793#794#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NarratorTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/NarratorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-91">
+              <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#249#250#0" expanded="true" />
+                <element signature="e#291#292#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -106,24 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Hero.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Characters/Heroes/Hero.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="33" column="39" lean-forward="true" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
-              <folding>
-                <element signature="e#940#941#0" expanded="true" />
-                <element signature="e#967#968#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Fighter.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Fighter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Characters/Heroes/Fighters/Fighter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="47" column="8" lean-forward="false" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="43" />
+            <state relative-caret-position="359">
+              <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -446,8 +447,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Characters/Heroes/Hero.java" />
         <option value="$PROJECT_DIR$/src/test/java/NarratorTes.java" />
-        <option value="$PROJECT_DIR$/src/test/java/NarratorTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Characters/Heroes/Fighters/Fighter.java" />
         <option value="$PROJECT_DIR$/src/main/java/Characters/Character.java" />
         <option value="$PROJECT_DIR$/src/main/java/Characters/Creatures/Creature.java" />
         <option value="$PROJECT_DIR$/src/main/java/Characters/Heroes/Healers/Healer.java" />
@@ -456,6 +455,8 @@
         <option value="$PROJECT_DIR$/src/main/java/Room/Room.java" />
         <option value="$PROJECT_DIR$/src/test/java/RoomTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Characters/Narrator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/NarratorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Characters/Heroes/Fighters/Fighter.java" />
       </list>
     </option>
   </component>
@@ -613,7 +614,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in fantasyGameHomework_test">
+  <component name="RunManager" selected="JUnit.NarratorTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -804,8 +805,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.All in fantasyGameHomework_test" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.NarratorTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.NarratorTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.All in fantasyGameHomework_test" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.NarratorTest.canTellTale" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.RoomTest" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.ClericTest" />
@@ -829,21 +830,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_fantasyGameHomework_test - 2018.04.27 at 15h 54m 39s.xml">
-      <configuration name="All in fantasyGameHomework_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_fantasyGameHomework_test - 2018.04.27 at 16h 08m 45s.xml">
-      <configuration name="All in fantasyGameHomework_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_fantasyGameHomework_test - 2018.04.27 at 16h 24m 57s.xml">
-      <configuration name="All in fantasyGameHomework_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_fantasyGameHomework_test - 2018.04.27 at 16h 26m 21s.xml">
-      <configuration name="All in fantasyGameHomework_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_fantasyGameHomework_test - 2018.04.27 at 16h 48m 06s.xml">
-      <configuration name="All in fantasyGameHomework_test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_fantasyGameHomework_test - 2018.04.27 at 16h 52m 34s.xml">
       <configuration name="All in fantasyGameHomework_test" configurationId="JUnit" />
     </history-entry>
@@ -856,7 +842,22 @@
     <history-entry file="All_in_fantasyGameHomework_test - 2018.04.27 at 16h 54m 21s.xml">
       <configuration name="All in fantasyGameHomework_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NarratorTest - 2018.04.27 at 15h 53m 19s.xml">
+    <history-entry file="NarratorTest - 2018.04.27 at 16h 56m 42s.xml">
+      <configuration name="NarratorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NarratorTest - 2018.04.27 at 16h 59m 09s.xml">
+      <configuration name="NarratorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NarratorTest - 2018.04.27 at 17h 05m 37s.xml">
+      <configuration name="NarratorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NarratorTest - 2018.04.27 at 17h 06m 10s.xml">
+      <configuration name="NarratorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NarratorTest - 2018.04.27 at 17h 08m 40s.xml">
+      <configuration name="NarratorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NarratorTest - 2018.04.27 at 17h 11m 20s.xml">
       <configuration name="NarratorTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -1034,18 +1035,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/NarratorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#220#221#0" expanded="true" />
-            <element signature="e#262#263#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Characters/Heroes/Hero.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
@@ -1080,14 +1069,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
           <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Characters/Heroes/Fighters/Fighter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="47" column="8" lean-forward="false" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -1130,8 +1111,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Characters/Narrator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="47" lean-forward="true" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+        <state relative-caret-position="269">
+          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
           <folding>
             <element signature="e#133#134#0" expanded="true" />
             <element signature="e#179#180#0" expanded="true" />
@@ -1142,6 +1123,26 @@
             <element signature="e#764#765#0" expanded="true" />
             <element signature="e#793#794#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/NarratorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-91">
+          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#249#250#0" expanded="true" />
+            <element signature="e#291#292#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Characters/Heroes/Fighters/Fighter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
