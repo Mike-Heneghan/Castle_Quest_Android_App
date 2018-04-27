@@ -68,6 +68,9 @@ public class Room {
                 remainingHeroes.add(hero);
             }
         }
+        for (Hero h: remainingHeroes) {
+            narrator.addStoryLine(h.getName() + " survived the encounter" + " Treasure: " + h.getTotalTreasureValue() + " Health Points: " + h.getHp());
+        }
         return remainingHeroes;
     }
 

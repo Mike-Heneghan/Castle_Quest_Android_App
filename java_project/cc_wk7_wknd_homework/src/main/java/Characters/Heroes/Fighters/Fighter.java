@@ -43,8 +43,8 @@ public abstract class Fighter extends Hero {
     public String standardMove(Character characterToAttack){
         if(shouldDoMove(this.weapon.chanceValue))
         {characterToAttack.takeDamage(this.wield(weapon));
-        return (this.getName() + " attacked " + characterToAttack.getName() + " successfully." + System.lineSeparator() );
+        return (this.getName() + " attacked " + characterToAttack.getName() + " successfully.");
         }
-        return this.getName() + " missed!";
+        return this.getName() + " missed " + characterToAttack.getName() + "!";
     }
 }
