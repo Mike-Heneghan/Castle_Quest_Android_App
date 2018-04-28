@@ -3,10 +3,19 @@ package Characters;
 import java.util.ArrayList;
 
 public class Narrator {
+    private static Narrator instance = null;
+
     private ArrayList<String> story;
 
-    public Narrator(){
+    protected Narrator(){
         this.story = new ArrayList<>();
+    }
+
+    public static Narrator getInstance(){
+        if (instance == null){
+            instance = new Narrator();
+        }
+        return instance;
     }
 
     public void addStoryLine(String info){
@@ -16,6 +25,7 @@ public class Narrator {
     public ArrayList<String> tellTale(){
         ArrayList<String> userStory = tale();
         clearStory();
+        clearNarrator();
         return userStory;
     }
 
@@ -34,5 +44,9 @@ public class Narrator {
 
     public void clearStory(){
         story.clear();
+    }
+
+    public void clearNarrator(){
+        instance = new Narrator();
     }
 }
