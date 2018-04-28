@@ -35,10 +35,12 @@ public abstract class Mage extends Hero {
     }
 
     //move 1. This is the move to use the spell that the Mage has assigned to them.
-    public void standardMove(Character characterToAttack){
+    public String standardMove(Character characterToAttack){
         if(shouldDoMove(this.spell.getChanceValue())){
             characterToAttack.takeDamage(this.spell.getDamageValue());
+            return (this.getName() + " attacked " + characterToAttack.getName() + " successfully.");
         }
+        return this.getName() + " missed!";
     }
 
 

@@ -6,20 +6,27 @@ import Characters.Creatures.CreatureType;
 import Characters.Heroes.Healers.Cleric;
 import Characters.Heroes.Hero;
 import Characters.Heroes.Treasure;
+import Characters.Narrator;
 
 import java.util.ArrayList;
 
 public class Room {
 
+    private Narrator narrator;
     private Character monster;
     private Treasure treasure;
     private ArrayList<Hero> heroes;
 
 
     public Room(){
+        this.narrator = new Narrator();
         this.monster = new Creature(CreatureType.getRandomCreature());
         this.treasure = Treasure.getRandomTreasure();
         this.heroes = new ArrayList<>();
+    }
+
+    public Narrator getNarrator() {
+        return narrator;
     }
 
     public Character getMonster() {
@@ -61,6 +68,9 @@ public class Room {
                 remainingHeroes.add(hero);
             }
         }
+        for (Hero h: remainingHeroes) {
+            narrator.addStoryLine(h.getName() + " survived the encounter" + " Treasure: " + h.getTotalTreasureValue() + " Health Points: " + h.getHp());
+        }
         return remainingHeroes;
     }
 
@@ -68,10 +78,10 @@ public class Room {
     public void heroesFightMonster(){
         for(Hero hero : heroes){
             if (hero.getType() == "Healer"){
-                hero.standardMove(heroes.get(0));
-                monster.standardMove(hero); }
-            else {hero.standardMove(monster);
-            monster.standardMove(hero);}
+                narrator.addStoryLine(hero.standardMove(heroes.get(0)));
+                narrator.addStoryLine(monster.standardMove(hero)); }
+            else {narrator.addStoryLine(hero.standardMove(monster));
+            narrator.addStoryLine(monster.standardMove(hero));}
         }
 
     }
@@ -93,6 +103,7 @@ public class Room {
         fight();
         if(!returnRemainingHeroes().isEmpty()){
             heroesCollectTreasure();
+
         }
     }
 

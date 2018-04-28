@@ -13,21 +13,17 @@ public class Narrator {
         story.add(info);
     }
 
-    public String tellTale(){
-        String userStory = this.tale();
+    public ArrayList<String> tellTale(){
+        ArrayList<String> userStory = tale();
         clearStory();
         return userStory;
     }
 
-    public String tale() {
-        String tale = "";
+    public ArrayList<String> tale() {
+        ArrayList<String> tale = new ArrayList<>();
         int storyLength = story.size();
         for (int i = 0; i < storyLength; i++) {
-            String line = story.get(i);
-            if (i == 0){
-            tale = (tale + line);}
-            else {
-                tale = tale + " " +line;}
+           tale.add(story.get(i));
         }
         return tale;
     }
