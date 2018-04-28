@@ -3,10 +3,19 @@ package Characters;
 import java.util.ArrayList;
 
 public class Narrator {
+    private static Narrator instance = null;
+
     private ArrayList<String> story;
 
-    public Narrator(){
+    protected Narrator(){
         this.story = new ArrayList<>();
+    }
+
+    public static Narrator getInstance(){
+        if (instance == null){
+            instance = new Narrator();
+        }
+        return instance;
     }
 
     public void addStoryLine(String info){

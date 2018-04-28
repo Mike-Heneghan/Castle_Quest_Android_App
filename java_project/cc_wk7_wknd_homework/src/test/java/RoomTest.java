@@ -5,6 +5,7 @@ import Characters.Heroes.Healers.Cleric;
 import Characters.Heroes.Hero;
 import Characters.Heroes.Mages.Spell;
 import Characters.Heroes.Mages.Warlock;
+import Characters.Narrator;
 import Room.Room;
 import org.junit.Before;
 import org.junit.Test;
@@ -135,6 +136,6 @@ public class RoomTest {
     @Test
     public void canReturnStory() {
         fullroom.encounter();
-        assertEquals("", fullroom.getNarrator().tellTale());
+        assertEquals("", Narrator.getInstance().tellTale());
     }
 }

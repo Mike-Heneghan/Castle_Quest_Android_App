@@ -10,9 +10,7 @@ public class NarratorTest {
     private Narrator narrator1;
 
     @Before
-    public void before(){
-        narrator1 = new Narrator();
-    }
+    public void before(){}
 
     @Test
     public void canAddString(){
