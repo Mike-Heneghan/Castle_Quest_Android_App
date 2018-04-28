@@ -103,6 +103,7 @@ public class Room {
         fight();
         if(!returnRemainingHeroes().isEmpty()){
             heroesCollectTreasure();
+
         }
     }
 
