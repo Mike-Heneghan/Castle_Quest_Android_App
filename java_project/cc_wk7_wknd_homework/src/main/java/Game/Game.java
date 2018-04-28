@@ -21,11 +21,7 @@ public class Game {
     private int roomsToGenerate;
     private ArrayList<Room> rooms;
     private ArrayList<Hero> heroes;
-    private Room room1;
-    private Room room2;
-    private Room room3;
-    private Room room4;
-    private Room room5;
+
 
     public Game(String name, int roomsToGenerate){
 

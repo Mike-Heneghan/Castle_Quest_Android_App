@@ -18,6 +18,8 @@ import static org.junit.Assert.assertEquals;
 
 public class GameTest {
     private Game game1;
+    private Game game2;
+    private Game game3;
     private Hero knight1;
     private Hero dwarf1;
     private Hero barbarian1;
@@ -28,6 +30,8 @@ public class GameTest {
     @Before
     public void before(){
         game1 =  new Game("M&C's Castle of Madness",5);
+        game2 = new Game("Second Castle", 3);
+        game3 = new Game("Third one", 10);
         knight1 = new Knight("Mike");
         dwarf1 = new Dwarf("Simon");
         barbarian1 = new Barbarian("Tom");
@@ -113,6 +117,16 @@ public class GameTest {
         assertEquals(knightAdded, game1.getRooms().get(0).getHeroes().get(0));
         assertEquals(barbarianAdded, game1.getRooms().get(0).getHeroes().get(1));
         assertEquals(dwarfAdded, game1.getRooms().get(0).getHeroes().get(2));
+    }
+
+    @Test
+    public void gameCanStartWithSetRooms3(){
+        assertEquals(3,game2.getRooms().size());
+    }
+
+    @Test
+    public void gameCanStartWithSetRooms10(){
+        assertEquals(10,game3.getRooms().size());
     }
 
 
