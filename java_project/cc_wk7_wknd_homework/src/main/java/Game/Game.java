@@ -16,31 +16,23 @@ import java.util.ArrayList;
 
 public class Game {
 
+
     private String name;
+    private int roomsToGenerate;
     private ArrayList<Room> rooms;
     private ArrayList<Hero> heroes;
-    private Room room1;
-    private Room room2;
-    private Room room3;
-    private Room room4;
-    private Room room5;
 
-    public Game(String name){
+
+    public Game(String name, int roomsToGenerate){
 
         this.name = name;
+        this.roomsToGenerate = roomsToGenerate;
         this.heroes = new ArrayList<>();
 
         ArrayList<Room> generatedRooms = new ArrayList<>();
-        room1 = new Room();
-        room2 = new Room();
-        room3 = new Room();
-        room4 = new Room();
-        room5 = new Room();
-        generatedRooms.add(room1);
-        generatedRooms.add(room2);
-        generatedRooms.add(room3);
-        generatedRooms.add(room4);
-        generatedRooms.add(room5);
+        for (int i = 0; i < roomsToGenerate ; i++) {
+            generatedRooms.add(new Room());
+        }
         this.rooms = generatedRooms;
     }
 

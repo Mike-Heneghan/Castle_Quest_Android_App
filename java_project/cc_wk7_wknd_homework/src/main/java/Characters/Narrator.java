@@ -25,7 +25,7 @@ public class Narrator {
     public ArrayList<String> tellTale(){
         ArrayList<String> userStory = tale();
         clearStory();
-        clearNarrator();
+        Narrator.getInstance().clearNarrator();
         return userStory;
     }
 
