@@ -25,6 +25,7 @@ public class Narrator {
     public ArrayList<String> tellTale(){
         ArrayList<String> userStory = tale();
         clearStory();
+        clearNarrator();
         return userStory;
     }
 
@@ -43,5 +44,9 @@ public class Narrator {
 
     public void clearStory(){
         story.clear();
+    }
+
+    public void clearNarrator(){
+        instance = new Narrator();
     }
 }
