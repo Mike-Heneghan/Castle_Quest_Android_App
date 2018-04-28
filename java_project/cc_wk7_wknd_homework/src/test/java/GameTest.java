@@ -27,7 +27,7 @@ public class GameTest {
 
     @Before
     public void before(){
-        game1 =  new Game("M&C's Castle of Madness");
+        game1 =  new Game("M&C's Castle of Madness",5);
         knight1 = new Knight("Mike");
         dwarf1 = new Dwarf("Simon");
         barbarian1 = new Barbarian("Tom");
