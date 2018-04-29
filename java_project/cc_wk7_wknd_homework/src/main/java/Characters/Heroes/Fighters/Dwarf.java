@@ -21,12 +21,15 @@ public class Dwarf extends Fighter{
         return throwingAxes;
     }
 
-    public void signatureMove(Character characterToAttack) {
+    public String signatureMove(Character characterToAttack) {
         if (throwingAxes.size() > 0) {
             if (shouldDoMove(throwingAxes.get(0).chanceValue)) {
                 characterToAttack.takeDamage(throwingAxes.get(0).damageValue);
                 throwingAxes.remove(0);
+                return this.getName() + " attacked " + characterToAttack.getName() + " successfully.";
             }
+            return this.getName() + " missed " + characterToAttack.getName() + "!";
         }
+        return this.getName() + " is out of Throwing Axes!";
     }
 }

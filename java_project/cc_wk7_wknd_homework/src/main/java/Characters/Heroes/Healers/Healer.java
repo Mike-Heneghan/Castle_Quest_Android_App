@@ -36,10 +36,12 @@ public abstract class Healer extends Hero {
     }
 
     //move2. This move resurrects the player with 100 hp, but the likelihood of it happening is low as the chance value is 2.
-    public void signatureMove(Character characterToHeal){
+    public String signatureMove(Character characterToHeal){
         if(shouldDoMove(HealingTool.RESURRECTION.chanceValue)){
             characterToHeal.beHealed(HealingTool.RESURRECTION.healingValue);
+            return this.getName() + " healed " + characterToHeal.getName() + " successfully.";
         }
+        return this.getName() + " missed " + characterToHeal.getName() + "!";
     }
 
 

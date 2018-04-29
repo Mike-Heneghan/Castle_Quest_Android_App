@@ -78,4 +78,24 @@ public class DwarfTest {
         assertEquals(100, dragon1.getHp());
         assertEquals(0, dwarf1.getThrowingAxes().size());
     }
+
+//    Random tests
+//    @Test
+//    public void signatureMoveReturnsString(){
+//    assertEquals("Simon attacked Dragony successfully.", dwarf1.signatureMove(dragon1));
+//    }
+//
+//    @Test
+//    public void outOfAxesMessage(){
+//        dwarf1.signatureMove(dragon1);
+//        dwarf1.signatureMove(dragon1);
+//        dwarf1.signatureMove(dragon1);
+//        dwarf1.signatureMove(dragon1);
+//        dwarf1.signatureMove(dragon1);
+//        dwarf1.signatureMove(dragon1);
+//        dwarf1.signatureMove(dragon1);
+//        dwarf1.signatureMove(dragon1);
+//        assertEquals("Simon is out of Throwing Axes!",dwarf1.signatureMove(dragon1));
+//    }
+
 }

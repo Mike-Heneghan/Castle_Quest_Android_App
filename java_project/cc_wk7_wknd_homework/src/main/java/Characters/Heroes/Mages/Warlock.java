@@ -16,10 +16,12 @@ public class Warlock extends Mage {
     //There is a weird bug in this method. I should just be able to call this.creature but instead I have to call its getter. Why?
     //The creature is private in the mage class so you can only access it with the public getCreature method.
 
-    public void signatureMove(Character characterToAttack){
+    public String signatureMove(Character characterToAttack){
         if (shouldDoMove(getCreature().getMv2ChanceValue())) {
             characterToAttack.takeDamage(getCreature().getMv2DamageValue());
+            return this.getName() + " attacked " + characterToAttack.getName() + " successfully.";
         }
+        return this.getName() + " missed " +characterToAttack.getName() + "!";
     }
 
 }

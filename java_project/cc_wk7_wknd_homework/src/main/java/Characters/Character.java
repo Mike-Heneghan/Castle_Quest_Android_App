@@ -55,8 +55,8 @@ public abstract class Character {
     }
 
     //move2
-    public void signatureMove(Character characterToAttack){
-
+    public String signatureMove(Character characterToAttack){
+        return "";
     }
 
     public boolean characterDead(){

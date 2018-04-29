@@ -88,6 +88,10 @@ public class WarlockTest {
         assertEquals(120, warlock.getHp());
     }
 
+    @Test
+    public void signatureMoveReturnsString() {
+        assertEquals("Terry missed Trolly!", warlock.signatureMove(troll));
+    }
 //
 //    @Test
 //    public void canDoSignatureMove(){
