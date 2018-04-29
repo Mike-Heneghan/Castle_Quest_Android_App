@@ -26,8 +26,10 @@ public class Dwarf extends Fighter{
             if (shouldDoMove(throwingAxes.get(0).chanceValue)) {
                 characterToAttack.takeDamage(throwingAxes.get(0).damageValue);
                 throwingAxes.remove(0);
+                return this.getName() + " attacked " + characterToAttack.getName() + " successfully.";
             }
+            return this.getName() + " missed " + characterToAttack.getName() + "!";
         }
-        return "";
+        return this.getName() + " is out of Throwing Axes!";
     }
 }
