@@ -54,4 +54,16 @@ public class BarbarianTest {
         assertEquals(0, dragon1.getHp());
     }
 
+    @Test
+    public void signatureReturnsString(){
+        barb1.setHp(0);
+        assertEquals("Doug attacked Dragony successfully.", barb1.signatureMove(dragon1));
+    }
+
+    @Test
+    public void canMissString(){
+        barb1.setHp(100);
+        assertEquals("Doug missed Dragony!", barb1.signatureMove(dragon1));
+    }
+
 }

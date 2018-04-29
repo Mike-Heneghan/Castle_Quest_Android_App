@@ -16,10 +16,12 @@ public class Barbarian extends Fighter {
         if (hp < 20) {
             characterToAttack.setHp(0);
             this.setHp(0);
+            return this.getName() + " attacked " + characterToAttack.getName() + " successfully.";
         } else if (shouldDoMove(rageChance)) {
             characterToAttack.setHp(0);
             this.setHp(0);
+            return this.getName() + " attacked " + characterToAttack.getName() + " successfully.";
         }
-        return "";
+        return this.getName() + " missed " + characterToAttack.getName() + "!";
     }
 }
