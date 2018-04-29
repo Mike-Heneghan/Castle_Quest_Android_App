@@ -12,7 +12,7 @@ public class Barbarian extends Fighter {
         rageChance = 6;
     }
 
-    public void signatureMove(Character characterToAttack) {
+    public String signatureMove(Character characterToAttack) {
         if (hp < 20) {
             characterToAttack.setHp(0);
             this.setHp(0);
@@ -20,5 +20,6 @@ public class Barbarian extends Fighter {
             characterToAttack.setHp(0);
             this.setHp(0);
         }
+        return "";
     }
 }

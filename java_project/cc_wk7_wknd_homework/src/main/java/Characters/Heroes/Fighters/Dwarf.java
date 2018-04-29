@@ -21,12 +21,13 @@ public class Dwarf extends Fighter{
         return throwingAxes;
     }
 
-    public void signatureMove(Character characterToAttack) {
+    public String signatureMove(Character characterToAttack) {
         if (throwingAxes.size() > 0) {
             if (shouldDoMove(throwingAxes.get(0).chanceValue)) {
                 characterToAttack.takeDamage(throwingAxes.get(0).damageValue);
                 throwingAxes.remove(0);
             }
         }
+        return "";
     }
 }

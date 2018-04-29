@@ -52,8 +52,9 @@ public class Creature extends Character {
     }
 
     //move2. This move uses the second move in the creature's enum.
-    public void signatureMove(Character characterToAttack){
+    public String signatureMove(Character characterToAttack){
         if(shouldDoMove(this.mv2ChanceValue)){characterToAttack.takeDamage(this.mv2DamageValue);}
+        return "";
     }
 
 
