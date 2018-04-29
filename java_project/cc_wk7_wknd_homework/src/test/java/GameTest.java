@@ -53,7 +53,7 @@ public class GameTest {
 
     @Test
     public void hasRandomRooms(){
-        assertEquals(5, game1.getRooms().size());
+        assertEquals(5, game1.getNewRooms().size());
     }
 
     @Test
@@ -98,8 +98,8 @@ public class GameTest {
         assertEquals(1, game1.getHeroes().size());
         game1.addHeroesToFirstRoom();
         assertEquals(0, game1.getHeroes().size());
-        assertEquals(1, game1.getRooms().get(0).getHeroes().size());
-        assertEquals(knightAdded, game1.getRooms().get(0).getHeroes().get(0));
+        assertEquals(1, game1.getNewRooms().get(0).getHeroes().size());
+        assertEquals(knightAdded, game1.getNewRooms().get(0).getHeroes().get(0));
     }
 
     @Test
@@ -113,21 +113,35 @@ public class GameTest {
         assertEquals(3, game1.getHeroes().size());
         game1.addHeroesToFirstRoom();
         assertEquals(0, game1.getHeroes().size());
-        assertEquals(3, game1.getRooms().get(0).getHeroes().size());
-        assertEquals(knightAdded, game1.getRooms().get(0).getHeroes().get(0));
-        assertEquals(barbarianAdded, game1.getRooms().get(0).getHeroes().get(1));
-        assertEquals(dwarfAdded, game1.getRooms().get(0).getHeroes().get(2));
+        assertEquals(3, game1.getNewRooms().get(0).getHeroes().size());
+        assertEquals(knightAdded, game1.getNewRooms().get(0).getHeroes().get(0));
+        assertEquals(barbarianAdded, game1.getNewRooms().get(0).getHeroes().get(1));
+        assertEquals(dwarfAdded, game1.getNewRooms().get(0).getHeroes().get(2));
     }
 
     @Test
     public void gameCanStartWithSetRooms3(){
-        assertEquals(3,game2.getRooms().size());
+        assertEquals(3,game2.getNewRooms().size());
     }
 
     @Test
     public void gameCanStartWithSetRooms10(){
-        assertEquals(10,game3.getRooms().size());
+        assertEquals(10,game3.getNewRooms().size());
     }
 
+    @Test
+    public void canMoveToNextRooms(){
+        game1.addKnight("Mike");
+        game1.addBarbarian("Mariana");
+        game1.addDwarf("Simon");
+        game1.addHeroesToFirstRoom();
+        assertEquals(3, game1.getNewRooms().get(0).getHeroes().size());
+        game1.returnHeroesFromRoomToHallway();
+        game1.moveCompletedRoomtoCompletedArrayList();
+        game1.addHeroesToFirstRoom();
+        assertEquals(1, game1.getCompletedRooms().size());
+        assertEquals(4, game1.getNewRooms().size());
+        assertEquals(3,game1.getNewRooms().get(0).getHeroes().size());
+    }
 
 }
