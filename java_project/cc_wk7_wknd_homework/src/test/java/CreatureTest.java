@@ -104,6 +104,11 @@ public class CreatureTest {
         assertTrue(troll.characterDead());
     }
 
+    @Test
+    public void signatureMoveReturnsString(){
+        assertEquals("Trolly missed Tony!", troll.signatureMove(cleric));
+    }
+
 //
 //    @Test
 //    public void trollWillOnlySometimesAttack(){
