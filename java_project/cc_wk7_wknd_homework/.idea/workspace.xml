@@ -121,8 +121,8 @@
           <file leaf-file-name="RoomTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/RoomTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="200">
-                  <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+                <state relative-caret-position="271">
+                  <caret line="117" column="40" lean-forward="true" selection-start-line="117" selection-start-column="40" selection-end-line="117" selection-end-column="40" />
                   <folding>
                     <element signature="e#1118#1119#0" expanded="true" />
                     <element signature="e#1151#1152#0" expanded="true" />
@@ -463,9 +463,9 @@
         <option value="$PROJECT_DIR$/src/test/java/GameTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/WarlockTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Characters/Heroes/Fighters/Knight.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RoomTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Characters/Heroes/Healers/Healer.java" />
         <option value="$PROJECT_DIR$/src/main/java/Room/Room.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RoomTest.java" />
       </list>
     </option>
   </component>
@@ -1441,8 +1441,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/RoomTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+        <state relative-caret-position="271">
+          <caret line="117" column="40" lean-forward="true" selection-start-line="117" selection-start-column="40" selection-end-line="117" selection-end-column="40" />
           <folding>
             <element signature="e#1118#1119#0" expanded="true" />
             <element signature="e#1151#1152#0" expanded="true" />
