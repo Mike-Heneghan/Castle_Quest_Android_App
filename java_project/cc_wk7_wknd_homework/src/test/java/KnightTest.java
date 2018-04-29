@@ -74,4 +74,9 @@ public class KnightTest {
         assertEquals(50, knight1.getTotalTreasureValue());
 
     }
+
+    @Test
+    public void signatureReturnsString(){
+        assertEquals("Mike attacked Dragony successfully.",knight1.signatureMove(dragon1));
+    }
 }

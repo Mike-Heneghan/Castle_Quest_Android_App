@@ -18,7 +18,7 @@ public class Knight extends Fighter {
     //For the knight the stab has 100% chance of hitting.
     public String signatureMove(Character characterToAttack){
        {characterToAttack.takeDamage(this.stab());}
-       return "";
+       return this.getName() + " attacked " + characterToAttack.getName() + " successfully.";
     }
 
 
