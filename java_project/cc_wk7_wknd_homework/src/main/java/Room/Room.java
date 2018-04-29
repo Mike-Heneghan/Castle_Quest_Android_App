@@ -70,7 +70,8 @@ public class Room {
             if (hero.getType() == "Healer"){
                 Narrator.getInstance().addStoryLine(hero.standardMove(heroWithLowestHealth()));
             }
-            else Narrator.getInstance().addStoryLine(hero.standardMove(monster));}
+            else Narrator.getInstance().addStoryLine(hero.standardMove(monster));
+        }
         else Narrator.getInstance().addStoryLine(hero.getName() + " is dead!");
 
     }

@@ -35,6 +35,7 @@ public class RoomTest {
         fullroom.addHeroes(hero1);
         fullroom.addHeroes(hero2);
         fullroom.addHeroes(hero3);
+
     }
 
     @Test
@@ -128,6 +129,15 @@ public class RoomTest {
         answer.add(hero1.getName() + " attacked " + fullroom.getMonster().getName() + " successfully.");
         assertEquals(answer, Narrator.getInstance().tellTale());
     }
+
+//    @Test
+//    public void monsterCanAttackHeroes(){
+//        room1.addHeroes(hero1);
+//        room1.monsterStandardAttack(hero1);
+//        ArrayList<String> answer = new ArrayList<>();
+//        answer.add(room1.getMonster().getName()+ " attacked " + room1.getHeroes().get(0).getName() + " successfully.");
+//        assertEquals(answer, Narrator.getInstance().tellTale());
+//    }
 
 
 
