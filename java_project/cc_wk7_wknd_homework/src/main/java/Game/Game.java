@@ -66,8 +66,8 @@ public class Game {
         heroes.add(new Cleric(name));
     }
 
-    public void addWarlock(String name, Spell spell, Creature creature){
-        heroes.add(new Warlock(name, spell, creature));
+    public void addWarlock(String name){
+        heroes.add(new Warlock(name));
     }
 
     public void addHeroesToFirstRoom(){

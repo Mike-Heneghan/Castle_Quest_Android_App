@@ -28,7 +28,7 @@ public class RoomTest {
         creature1 = new Creature(CreatureType.GIANTSPIDER);
         room1 = new Room();
         hero1 = new Knight("Peter");
-        hero2 = new Warlock("Ashley", Spell.FIREBALL, creature1);
+        hero2 = new Warlock("Ashley");
         hero3 = new Cleric("Pawel");
         ArrayList<Hero> heroes = new ArrayList<>();
         fullroom = new Room();
