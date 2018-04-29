@@ -17,19 +17,19 @@ public class WarlockTest {
     @Before
     public void setup(){
         dragon = new Creature(CreatureType.DRAGON);
-        warlock = new Warlock("Terry", Spell.CONFUSION, dragon);
+        warlock = new Warlock("Terry");
         troll = new Creature(CreatureType.TROLL);
     }
-
-    @Test
-    public void canGetSpell(){
-        assertEquals(Spell.CONFUSION, warlock.getSpell());
-    }
-
-    @Test
-    public void canGetCreature(){
-        assertEquals(CreatureType.DRAGON, warlock.getCreature().getType());
-    }
+//  Random From Constructor
+//    @Test
+//    public void canGetSpell(){
+//        assertEquals(Spell.CONFUSION, warlock.getSpell());
+//    }
+//
+//    @Test
+//    public void canGetCreature(){
+//        assertEquals(CreatureType.DRAGON, warlock.getCreature().getType());
+//    }
 
     @Test
     public void canSetSpell(){
@@ -37,15 +37,16 @@ public class WarlockTest {
         assertEquals(Spell.BLINDNESS, warlock.getSpell());
     }
 
-    @Test
-    public void canGetSpellDamageValue(){
-        assertEquals(20, warlock.getSpell().getDamageValue());
-    }
-
-    @Test
-    public void canGetSpellChanceValue(){
-        assertEquals(10, warlock.getSpell().getChanceValue());
-    }
+//    Random In Constructor:
+//    @Test
+//    public void canGetSpellDamageValue(){
+//        assertEquals(20, warlock.getSpell().getDamageValue());
+//    }
+//
+//    @Test
+//    public void canGetSpellChanceValue(){
+//        assertEquals(10, warlock.getSpell().getChanceValue());
+//    }
 
     @Test
     public void canSetCreature(){

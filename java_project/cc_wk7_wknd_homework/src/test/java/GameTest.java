@@ -37,7 +37,7 @@ public class GameTest {
         barbarian1 = new Barbarian("Tom");
         cleric1 = new Cleric("Claire");
         dragon1 = new Creature(CreatureType.DRAGON);
-        warlock1 = new Warlock("Dave", Spell.FIREBALL, dragon1);
+        warlock1 = new Warlock("Dave");
 
     }
 
@@ -86,7 +86,7 @@ public class GameTest {
 
     @Test
     public void canAddNewWarlock(){
-        game1.addWarlock("Dave", Spell.FIREBALL, dragon1);
+        game1.addWarlock("Dave");
         assertEquals(1, game1.getHeroes().size());
         assertEquals(warlock1.getName(), game1.getHeroes().get(0).getName());
     }
