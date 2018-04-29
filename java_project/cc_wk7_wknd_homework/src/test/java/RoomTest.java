@@ -121,13 +121,13 @@ public class RoomTest {
 //        answer.add(hero3.getName() + " healed " + hero2.getName() + " successfully.");
 //        assertEquals(answer, Narrator.getInstance().tellTale());
 //    }
-//    @Test
-//    public void heroCanSignatureAttackMonster(){
-//        fullroom.heroSignatureMove(hero1);
-//        ArrayList<String> answer = new ArrayList<>();
-//        answer.add(hero1.getName() + " attacked " + fullroom.getMonster().getName() + " successfully!");
-//        assertEquals(answer, Narrator.getInstance().tellTale());
-//    }
+    @Test
+    public void heroCanSignatureAttackMonster(){
+        fullroom.heroSignatureMove(hero1);
+        ArrayList<String> answer = new ArrayList<>();
+        answer.add(hero1.getName() + " attacked " + fullroom.getMonster().getName() + " successfully.");
+        assertEquals(answer, Narrator.getInstance().tellTale());
+    }
 
 
 
