@@ -19,8 +19,9 @@ public class Warlock extends Mage {
     public String signatureMove(Character characterToAttack){
         if (shouldDoMove(getCreature().getMv2ChanceValue())) {
             characterToAttack.takeDamage(getCreature().getMv2DamageValue());
+            return this.getName() + " attacked " + characterToAttack.getName() + " successfully.";
         }
-        return "";
+        return this.getName() + " missed " +characterToAttack.getName() + "!";
     }
 
 }

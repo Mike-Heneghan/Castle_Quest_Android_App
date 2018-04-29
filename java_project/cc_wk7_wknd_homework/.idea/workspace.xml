@@ -25,10 +25,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Healer.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Healer.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/Characters/Heroes/Healers/Healer.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="402">
+                <state relative-caret-position="255">
                   <caret line="43" column="70" lean-forward="false" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
                   <folding />
                 </state>
@@ -67,7 +67,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Creature.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Creature.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/Characters/Creatures/Creature.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="319">
@@ -107,8 +107,8 @@
           <file leaf-file-name="Warlock.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/Characters/Heroes/Mages/Warlock.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="390">
-                  <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+                <state relative-caret-position="435">
+                  <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
                   <folding>
                     <element signature="e#234#235#0" expanded="true" />
                     <element signature="e#261#262#0" expanded="true" />
@@ -121,7 +121,7 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="ClericTest.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ClericTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/ClericTest.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="379">
@@ -140,6 +140,19 @@
                 <state relative-caret-position="439">
                   <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="WarlockTest.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/java/WarlockTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="95">
+                  <caret line="92" column="42" lean-forward="false" selection-start-line="92" selection-start-column="42" selection-end-line="92" selection-end-column="42" />
+                  <folding>
+                    <element signature="e#2474#2475#0" expanded="true" />
+                    <element signature="e#2556#2557#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -194,6 +207,18 @@
                     <element signature="e#1653#1654#0" expanded="true" />
                     <element signature="e#1707#1708#0" expanded="true" />
                     <element signature="e#1771#1772#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Mage.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/Characters/Heroes/Mages/Mage.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-146">
+                  <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -514,11 +539,9 @@
         <option value="$PROJECT_DIR$/src/main/java/Characters/Heroes/Mages/Mage.java" />
         <option value="$PROJECT_DIR$/src/main/java/Game/Game.java" />
         <option value="$PROJECT_DIR$/src/test/java/GameTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/WarlockTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Room/Room.java" />
         <option value="$PROJECT_DIR$/src/test/java/RoomTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Characters/Character.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Characters/Heroes/Mages/Warlock.java" />
         <option value="$PROJECT_DIR$/src/main/java/Characters/Creatures/Creature.java" />
         <option value="$PROJECT_DIR$/src/main/java/Characters/Heroes/Fighters/Barbarian.java" />
         <option value="$PROJECT_DIR$/src/test/java/BarbarianTest.java" />
@@ -528,6 +551,8 @@
         <option value="$PROJECT_DIR$/src/test/java/KnightTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ClericTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Characters/Heroes/Healers/Healer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/WarlockTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Characters/Heroes/Mages/Warlock.java" />
       </list>
     </option>
   </component>
@@ -685,7 +710,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ClericTest">
+  <component name="RunManager" selected="JUnit.All in fantasyGameHomework_test">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -876,9 +901,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ClericTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.KnightTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.All in fantasyGameHomework_test" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in fantasyGameHomework_test" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ClericTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.KnightTest" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.DwarfTest" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.GameTest" />
       </list>
@@ -901,39 +926,40 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_fantasyGameHomework_test - 2018.04.29 at 18h 19m 14s.xml">
+    <history-entry file="All_in_fantasyGameHomework_test - 2018.04.29 at 18h 32m 10s.xml">
       <configuration name="All in fantasyGameHomework_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_fantasyGameHomework_test - 2018.04.29 at 18h 19m 19s.xml">
+    <history-entry file="All_in_fantasyGameHomework_test - 2018.04.29 at 18h 32m 12s.xml">
       <configuration name="All in fantasyGameHomework_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_fantasyGameHomework_test - 2018.04.29 at 18h 19m 22s.xml">
+    <history-entry file="All_in_fantasyGameHomework_test - 2018.04.29 at 18h 32m 14s.xml">
       <configuration name="All in fantasyGameHomework_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_fantasyGameHomework_test - 2018.04.29 at 18h 19m 25s.xml">
+    <history-entry file="All_in_fantasyGameHomework_test - 2018.04.29 at 18h 32m 16s.xml">
       <configuration name="All in fantasyGameHomework_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_fantasyGameHomework_test - 2018.04.29 at 18h 23m 36s.xml">
+    <history-entry file="All_in_fantasyGameHomework_test - 2018.04.29 at 18h 35m 37s.xml">
       <configuration name="All in fantasyGameHomework_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClericTest - 2018.04.29 at 18h 29m 29s.xml">
-      <configuration name="ClericTest" configurationId="JUnit" />
+    <history-entry file="All_in_fantasyGameHomework_test - 2018.04.29 at 18h 35m 59s.xml">
+      <configuration name="All in fantasyGameHomework_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClericTest - 2018.04.29 at 18h 30m 41s.xml">
-      <configuration name="ClericTest" configurationId="JUnit" />
+    <history-entry file="All_in_fantasyGameHomework_test - 2018.04.29 at 18h 36m 08s.xml">
+      <configuration name="All in fantasyGameHomework_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClericTest - 2018.04.29 at 18h 30m 48s.xml">
-      <configuration name="ClericTest" configurationId="JUnit" />
+    <history-entry file="All_in_fantasyGameHomework_test - 2018.04.29 at 18h 36m 11s.xml">
+      <configuration name="All in fantasyGameHomework_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClericTest - 2018.04.29 at 18h 30m 58s.xml">
-      <configuration name="ClericTest" configurationId="JUnit" />
+    <history-entry file="All_in_fantasyGameHomework_test - 2018.04.29 at 18h 36m 33s.xml">
+      <configuration name="All in fantasyGameHomework_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="KnightTest - 2018.04.29 at 18h 23m 41s.xml">
-      <configuration name="KnightTest" configurationId="JUnit" />
+    <history-entry file="All_in_fantasyGameHomework_test - 2018.04.29 at 18h 36m 39s.xml">
+      <configuration name="All in fantasyGameHomework_test" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -948,7 +974,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1309,26 +1335,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Characters/Heroes/Mages/Mage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="41" lean-forward="false" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/GameTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="88" column="31" lean-forward="false" selection-start-line="88" selection-start-column="31" selection-end-line="88" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/WarlockTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-208">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1395,29 +1405,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Characters/Heroes/Mages/Warlock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-          <folding>
-            <element signature="e#234#235#0" expanded="true" />
-            <element signature="e#261#262#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Characters/Heroes/Healers/Cleric.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Characters/Creatures/Creature.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="56" column="16" lean-forward="false" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1496,14 +1487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Characters/Heroes/Healers/Healer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="43" column="70" lean-forward="false" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ClericTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="379">
@@ -1512,6 +1495,54 @@
             <element signature="e#3255#3256#0" expanded="true" />
             <element signature="e#3336#3337#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Characters/Heroes/Mages/Mage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-146">
+          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/WarlockTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="92" column="42" lean-forward="false" selection-start-line="92" selection-start-column="42" selection-end-line="92" selection-end-column="42" />
+          <folding>
+            <element signature="e#2474#2475#0" expanded="true" />
+            <element signature="e#2556#2557#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Characters/Heroes/Healers/Healer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="43" column="70" lean-forward="false" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Characters/Heroes/Mages/Warlock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <folding>
+            <element signature="e#234#235#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Characters/Creatures/Creature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="56" column="16" lean-forward="false" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
