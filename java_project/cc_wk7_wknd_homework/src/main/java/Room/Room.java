@@ -78,9 +78,9 @@ public class Room {
     public void heroSignatureMove(Hero hero){
         if (hero.getHp() > 0){
             if (hero.getType() == "Healer"){
-                hero.signatureMove(heroWithLowestHealth());
+                Narrator.getInstance().addStoryLine(hero.signatureMove(heroWithLowestHealth()));
             }
-            hero.signatureMove(monster);}
+            Narrator.getInstance().addStoryLine(hero.signatureMove(monster));}
         else Narrator.getInstance().addStoryLine(hero.getName() + " is dead!");
         }
 
