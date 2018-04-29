@@ -67,75 +67,149 @@ public class RoomTest {
         assertEquals(true, room1.noHeroesAlive());
     }
 
-    @Test public void firstHeroCanCollectTreasureFromRoom(){
-        fullroom.heroesCollectTreasure();
-        assertEquals(1, hero1.getInventory().size());
-        assertEquals(null, fullroom.getTreasure());
+    @Test
+    public void canCheckIfAllHeroesDead(){
+        assertEquals(true, room1.areAllHeroesDefeated());
     }
 
     @Test
-    public void roomCanGetRemainingHeroesAfterFight(){
-        hero1.setHp(0);
-        room1.addHeroes(hero1);
-        room1.addHeroes(hero2);
-        room1.addHeroes(hero3);
-        ArrayList<Hero> remainingHeroes = room1.returnRemainingHeroes();
-        assertEquals(2, remainingHeroes.size());
+    public void canReturnHeroWithLowestHealth(){
+        fullroom.getHeroes().get(0).setHp(20);
+        assertEquals(hero1, fullroom.heroWithLowestHealth());
+        fullroom.getHeroes().get(2).setHp(10);
+        assertEquals(hero3, fullroom.heroWithLowestHealth());
     }
 
     @Test
-    public void heroesCanFightMonsterInRoom(){
-        fullroom.heroesFightMonster();
-        assertFalse(fullroom.getMonster().characterDead());
-        assertFalse(hero1.characterDead());
-        assertFalse(hero2.characterDead());
-        assertFalse(hero3.characterDead());
-    }
-    //Oh man, how to test for an array of fighters fighting?! With the debugger you can see that every time this test is run the fighters and/or creature take damage so I think the method is working.
-
-    @Test
-    public void allHeroesAreAlive(){
-        assertFalse(fullroom.allHeroesDead());
+    public void canCheckFightIsOverMonsterDead(){
+        fullroom.getMonster().setHp(0);
+        assertEquals(true, fullroom.isFightOver());
     }
 
     @Test
-    public void allHeroesAreDead(){
-        hero1.setHp(0);
-        hero2.setHp(0);
-        hero3.setHp(0);
-        room1.addHeroes(hero1);
-        room1.addHeroes(hero2);
-        room1.addHeroes(hero3);
-        assertTrue(fullroom.allHeroesDead());
+    public void canCheckFightIsOverAllHeroesDead(){
+        fullroom.getHeroes().get(0).setHp(0);
+        fullroom.getHeroes().get(1).setHp(0);
+        fullroom.getHeroes().get(2).setHp(0);
+        assertEquals(true, fullroom.isFightOver());
     }
 
-    @Test
-    public void oneHeroIsAlive(){
-        hero3.setHp(0);
-        hero3.setHp(0);
-        room1.addHeroes(hero1);
-        room1.addHeroes(hero2);
-        room1.addHeroes(hero3);
-        assertFalse(fullroom.allHeroesDead());
-    }
-
+//    Random Answer Although Works Most of The Time
 //    @Test
-//    public void fightCanContinueUntilThereIsAWinner(){
-//        fullroom.fight();
-//        assertEquals(0, fullroom.returnRemainingHeroes().size());
+//    public void heroCanStandardAttackMonster(){
+//        fullroom.heroStandardMove(hero1);
+//        ArrayList<String> answer = new ArrayList<>();
+//        answer.add(hero1.getName() + " attacked " + fullroom.getMonster().getName() + " successfully.");
+//        assertEquals(answer, Narrator.getInstance().tellTale());
 //    }
-    //Another nightmare test - but it is returning variable array lengths, showing that the method is working (I think!). It also occasionally passes, showing that the monster has won.
 
     @Test
-    public void heroesCanHaveRoomEncounter(){
-        fullroom.encounter();
-        assertEquals(null, fullroom.getTreasure());
+    public void deadHeroesDontAttack(){
+        fullroom.getHeroes().get(0).setHp(0);
+        fullroom.heroStandardMove(hero1);
+        ArrayList<String> answer = new ArrayList<>();
+        answer.add(hero1.getName() + " is dead!");
+        assertEquals(answer,Narrator.getInstance().tellTale());
     }
-    //This test almost always passes, but now and again our heroes don't make it and the room still has treasure.
 
+//    Random Result Test
 //    @Test
-//    public void canReturnStory() {
+//    public void healerHealsHeroWithLowestHealth(){
+//        fullroom.getHeroes().get(1).setHp(50);
+//        fullroom.heroStandardMove(hero3);
+//        ArrayList<String> answer = new ArrayList<>();
+//        answer.add(hero3.getName() + " healed " + hero2.getName() + " successfully.");
+//        assertEquals(answer, Narrator.getInstance().tellTale());
+//    }
+//    @Test
+//    public void heroCanSignatureAttackMonster(){
+//        fullroom.heroSignatureMove(hero1);
+//        ArrayList<String> answer = new ArrayList<>();
+//        answer.add(hero1.getName() + " attacked " + fullroom.getMonster().getName() + " successfully!");
+//        assertEquals(answer, Narrator.getInstance().tellTale());
+//    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    @Test public void firstHeroCanCollectTreasureFromRoom(){
+//        fullroom.heroesCollectTreasure();
+//        assertEquals(1, hero1.getInventory().size());
+//        assertEquals(null, fullroom.getTreasure());
+//    }
+//
+//    @Test
+//    public void roomCanGetRemainingHeroesAfterFight(){
+//        hero1.setHp(0);
+//        room1.addHeroes(hero1);
+//        room1.addHeroes(hero2);
+//        room1.addHeroes(hero3);
+//        ArrayList<Hero> remainingHeroes = room1.returnRemainingHeroes();
+//        assertEquals(2, remainingHeroes.size());
+//    }
+//
+//    @Test
+//    public void heroesCanFightMonsterInRoom(){
+//        fullroom.heroesFightMonster();
+//        assertFalse(fullroom.getMonster().characterDead());
+//        assertFalse(hero1.characterDead());
+//        assertFalse(hero2.characterDead());
+//        assertFalse(hero3.characterDead());
+//    }
+//    //Oh man, how to test for an array of fighters fighting?! With the debugger you can see that every time this test is run the fighters and/or creature take damage so I think the method is working.
+//
+//    @Test
+//    public void allHeroesAreAlive(){
+//        assertFalse(fullroom.allHeroesDead());
+//    }
+//
+//    @Test
+//    public void allHeroesAreDead(){
+//        hero1.setHp(0);
+//        hero2.setHp(0);
+//        hero3.setHp(0);
+//        room1.addHeroes(hero1);
+//        room1.addHeroes(hero2);
+//        room1.addHeroes(hero3);
+//        assertTrue(fullroom.allHeroesDead());
+//    }
+//
+//    @Test
+//    public void oneHeroIsAlive(){
+//        hero3.setHp(0);
+//        hero3.setHp(0);
+//        room1.addHeroes(hero1);
+//        room1.addHeroes(hero2);
+//        room1.addHeroes(hero3);
+//        assertFalse(fullroom.allHeroesDead());
+//    }
+//
+////    @Test
+////    public void fightCanContinueUntilThereIsAWinner(){
+////        fullroom.fight();
+////        assertEquals(0, fullroom.returnRemainingHeroes().size());
+////    }
+//    //Another nightmare test - but it is returning variable array lengths, showing that the method is working (I think!). It also occasionally passes, showing that the monster has won.
+//
+//    @Test
+//    public void heroesCanHaveRoomEncounter(){
 //        fullroom.encounter();
-//        assertEquals("", Narrator.getInstance().tellTale());
+//        assertEquals(null, fullroom.getTreasure());
 //    }
+//    //This test almost always passes, but now and again our heroes don't make it and the room still has treasure.
+//
+////    @Test
+////    public void canReturnStory() {
+////        fullroom.encounter();
+////        assertEquals("", Narrator.getInstance().tellTale());
+////    }
 }

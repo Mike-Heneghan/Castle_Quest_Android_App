@@ -28,11 +28,11 @@ public abstract class Healer extends Hero {
 
     //move1. This move uses whatever healingTool the healer is in ownership of.
     public String standardMove(Character characterToHeal){
-        if(shouldDoMove(this.healingTool.chanceValue)){
-            characterToHeal.beHealed(this.healingTool.healingValue);
-            return (this.getName() + " healed " + characterToHeal.getName() + " successfully.");
+        if(shouldDoMove(this.healingTool.chanceValue))
+        { characterToHeal.beHealed(this.healingTool.healingValue);
+        return (this.getName() + " healed " + characterToHeal.getName() + " successfully.");
         }
-        return this.getName() + " missed!";
+        return this.getName() + " missed " + characterToHeal.getName() + "!";
     }
 
     //move2. This move resurrects the player with 100 hp, but the likelihood of it happening is low as the chance value is 2.
