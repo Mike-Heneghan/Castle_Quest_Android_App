@@ -130,18 +130,16 @@ public class GameTest {
     }
 
     @Test
-    public void canMoveToNextRooms(){
+    public void canMoveToNextRooms() {
         game1.addKnight("Mike");
         game1.addBarbarian("Mariana");
         game1.addDwarf("Simon");
         game1.addHeroesToFirstRoom();
         assertEquals(3, game1.getNewRooms().get(0).getHeroes().size());
-        game1.returnHeroesFromRoomToHallway();
-        game1.moveCompletedRoomtoCompletedArrayList();
-        game1.addHeroesToFirstRoom();
+        game1.moveToNextRoom();
         assertEquals(1, game1.getCompletedRooms().size());
         assertEquals(4, game1.getNewRooms().size());
-        assertEquals(3,game1.getNewRooms().get(0).getHeroes().size());
+        assertEquals(3, game1.getNewRooms().get(0).getHeroes().size());
     }
 
 }

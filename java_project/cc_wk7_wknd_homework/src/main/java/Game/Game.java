@@ -98,6 +98,10 @@ public class Game {
         completedRooms.add(tempHolding.get(0));
     }
 
-
+    public void moveToNextRoom(){
+        returnHeroesFromRoomToHallway();
+        moveCompletedRoomtoCompletedArrayList();
+        addHeroesToFirstRoom();
+    }
 
 }
