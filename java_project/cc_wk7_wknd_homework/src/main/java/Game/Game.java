@@ -19,7 +19,8 @@ public class Game {
 
     private String name;
     private int roomsToGenerate;
-    private ArrayList<Room> rooms;
+    private ArrayList<Room> newRooms;
+    private ArrayList<Room> completedRooms;
     private ArrayList<Hero> heroes;
 
 
@@ -33,15 +34,16 @@ public class Game {
         for (int i = 0; i < roomsToGenerate ; i++) {
             generatedRooms.add(new Room());
         }
-        this.rooms = generatedRooms;
+        this.newRooms = generatedRooms;
+        this.completedRooms = new ArrayList<>();
     }
 
     public String getName() {
         return name;
     }
 
-    public ArrayList<Room> getRooms() {
-        return rooms;
+    public ArrayList<Room> getNewRooms() {
+        return newRooms;
     }
 
     public ArrayList<Hero> getHeroes() {
@@ -73,6 +75,33 @@ public class Game {
         int heroCount = heroes.size();
         for (int i = 0; i < heroCount ; i++) {
             heroesInHallway.add(heroes.remove(0));}
-            rooms.get(0).addHeroesFromHallway(heroesInHallway);
+            newRooms.get(0).addHeroesFromHallway(heroesInHallway);
         }
+
+    public ArrayList<Room> getCompletedRooms() {
+        return completedRooms;
+    }
+
+    public void returnHeroesFromRoomToHallway(){
+        ArrayList<Hero> heroesInRoom = this.getNewRooms().get(0).getHeroes();
+        ArrayList<Hero> heroesAlive = new ArrayList<>();
+        int heroCount = heroesInRoom.size();
+        for (int i = 0; i < heroCount ; i++) {
+            if(heroesInRoom.get(0).getHp() > 0){
+            heroesAlive.add(heroesInRoom.remove(0));}}
+        for (Hero h: heroesAlive){ heroes.add(h);}
+    }
+
+    public void moveCompletedRoomtoCompletedArrayList(){
+        ArrayList<Room> tempHolding  = new ArrayList<>();
+        tempHolding.add(newRooms.remove(0));
+        completedRooms.add(tempHolding.get(0));
+    }
+
+    public void moveToNextRoom(){
+        returnHeroesFromRoomToHallway();
+        moveCompletedRoomtoCompletedArrayList();
+        addHeroesToFirstRoom();
+    }
+
 }
