@@ -28,8 +28,8 @@
           <file leaf-file-name="Healer.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/Characters/Heroes/Healers/Healer.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="409">
-                  <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+                <state relative-caret-position="402">
+                  <caret line="43" column="70" lean-forward="false" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
                   <folding />
                 </state>
               </provider>
@@ -121,7 +121,20 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="KnightTest.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ClericTest.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/java/ClericTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="379">
+                  <caret line="119" column="0" lean-forward="true" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#3255#3256#0" expanded="true" />
+                    <element signature="e#3336#3337#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="KnightTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/KnightTest.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="439">
@@ -506,7 +519,6 @@
         <option value="$PROJECT_DIR$/src/test/java/RoomTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Characters/Character.java" />
         <option value="$PROJECT_DIR$/src/main/java/Characters/Heroes/Mages/Warlock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Characters/Heroes/Healers/Healer.java" />
         <option value="$PROJECT_DIR$/src/main/java/Characters/Creatures/Creature.java" />
         <option value="$PROJECT_DIR$/src/main/java/Characters/Heroes/Fighters/Barbarian.java" />
         <option value="$PROJECT_DIR$/src/test/java/BarbarianTest.java" />
@@ -514,6 +526,8 @@
         <option value="$PROJECT_DIR$/src/test/java/DwarfTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Characters/Heroes/Fighters/Knight.java" />
         <option value="$PROJECT_DIR$/src/test/java/KnightTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ClericTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Characters/Heroes/Healers/Healer.java" />
       </list>
     </option>
   </component>
@@ -671,7 +685,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.KnightTest">
+  <component name="RunManager" selected="JUnit.ClericTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -702,6 +716,26 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="ClericTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="fantasyGameHomework_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ClericTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -760,26 +794,6 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="KnightTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="RoomTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="fantasyGameHomework_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RoomTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -855,18 +869,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.All in fantasyGameHomework_test" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.RoomTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.GameTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.DwarfTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.KnightTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.GameTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.DwarfTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.KnightTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ClericTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.KnightTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.All in fantasyGameHomework_test" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.DwarfTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.GameTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.RoomTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ClericTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.KnightTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.All in fantasyGameHomework_test" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.DwarfTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.GameTest" />
       </list>
     </recent_temporary>
   </component>
@@ -902,17 +916,17 @@
     <history-entry file="All_in_fantasyGameHomework_test - 2018.04.29 at 18h 23m 36s.xml">
       <configuration name="All in fantasyGameHomework_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DwarfTest - 2018.04.29 at 17h 45m 42s.xml">
-      <configuration name="DwarfTest" configurationId="JUnit" />
+    <history-entry file="ClericTest - 2018.04.29 at 18h 29m 29s.xml">
+      <configuration name="ClericTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DwarfTest - 2018.04.29 at 17h 45m 50s.xml">
-      <configuration name="DwarfTest" configurationId="JUnit" />
+    <history-entry file="ClericTest - 2018.04.29 at 18h 30m 41s.xml">
+      <configuration name="ClericTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DwarfTest - 2018.04.29 at 17h 45m 56s.xml">
-      <configuration name="DwarfTest" configurationId="JUnit" />
+    <history-entry file="ClericTest - 2018.04.29 at 18h 30m 48s.xml">
+      <configuration name="ClericTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DwarfTest - 2018.04.29 at 17h 45m 58s.xml">
-      <configuration name="DwarfTest" configurationId="JUnit" />
+    <history-entry file="ClericTest - 2018.04.29 at 18h 30m 58s.xml">
+      <configuration name="ClericTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="KnightTest - 2018.04.29 at 18h 23m 41s.xml">
       <configuration name="KnightTest" configurationId="JUnit" />
@@ -920,7 +934,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -935,7 +948,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -984,17 +997,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/NarratorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-          <folding>
-            <element signature="e#217#218#0" expanded="false" />
-            <element signature="e#271#272#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Characters/Narrator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -1496,9 +1498,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Characters/Heroes/Healers/Healer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        <state relative-caret-position="402">
+          <caret line="43" column="70" lean-forward="false" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ClericTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="119" column="0" lean-forward="true" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+          <folding>
+            <element signature="e#3255#3256#0" expanded="true" />
+            <element signature="e#3336#3337#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

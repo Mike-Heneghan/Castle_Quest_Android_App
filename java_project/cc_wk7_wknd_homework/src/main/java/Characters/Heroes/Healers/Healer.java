@@ -39,8 +39,9 @@ public abstract class Healer extends Hero {
     public String signatureMove(Character characterToHeal){
         if(shouldDoMove(HealingTool.RESURRECTION.chanceValue)){
             characterToHeal.beHealed(HealingTool.RESURRECTION.healingValue);
+            return this.getName() + " healed " + characterToHeal.getName() + " successfully.";
         }
-        return "";
+        return this.getName() + " missed " + characterToHeal.getName() + "!";
     }
 
 
