@@ -131,6 +131,37 @@ public class RoomTest {
     }
 
 //    @Test
+//    public void canReturnFiftyFifty(){
+//        assertEquals((1), room1.returnFiftyFifty() );
+//
+//    }
+
+//    @Test
+//    public void canReturnRandomAliveHero(){
+//        fullroom.getHeroes().get(0).setHp(0);
+//        assertEquals(hero2,fullroom.returnRandomAliveHero());
+//    }
+
+    @Test
+    public void monsterCanAttackHero() {
+        room1.addHeroes(hero1);
+        room1.monsterAttacks();
+        ArrayList<String> answer = new ArrayList<>();
+        answer.add(room1.getMonster().getName() + " missed " + room1.getHeroes().get(0).getName() + "!");
+        assertEquals(answer, Narrator.getInstance().tellTale());
+    }
+//
+//    @Test
+//    public void monsterAttacksRandomAliveHero(){
+//        fullroom.getHeroes().get(1).setHp(0);
+//        fullroom.monsterAttacks();
+//        ArrayList<String> answer = new ArrayList<>();
+//        answer.add(fullroom.getMonster().getName() + " missed " + fullroom.getHeroes().get(0).getName() + "!");
+//        assertEquals(answer, Narrator.getInstance().tellTale());
+//    }
+
+
+//    @Test
 //    public void monsterCanAttackHeroes(){
 //        room1.addHeroes(hero1);
 //        room1.monsterStandardAttack(hero1);
