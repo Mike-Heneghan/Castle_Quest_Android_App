@@ -1,7 +1,9 @@
-package com.example.mike.fantasygame;
+package com.example.mike.fantasygame.DragonCastle.Activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.mike.fantasygame.R;
 
 public class CharacterSelectionActivity extends AppCompatActivity {
 

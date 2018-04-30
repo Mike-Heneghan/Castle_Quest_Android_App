@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Fantasy Game</string>
+    <string name="app_name">Dragon Castle</string>
     <string name="app_title">Dragon Castle</string>
     <string name="app_subtitle">A Heroes Quest!</string>
     <string name="start_button">Begin Adventure</string>
@@ -8,5 +8,6 @@
     <string name="easy">Easy: 3 Rooms</string>
     <string name="medium">Medium: 5 Rooms</string>
     <string name="hard">Hard: 10 Rooms</string>
-    <string name="title_activity_character_selection">CharacterSelectionActivity</string>
+    <string name="title_activity_character_selection">Select Characters</string>
+    <string name="create_party">Create Party</string>
 </resources>
