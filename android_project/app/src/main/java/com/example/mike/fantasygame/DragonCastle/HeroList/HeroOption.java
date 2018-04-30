@@ -1,6 +1,8 @@
 package com.example.mike.fantasygame.DragonCastle.HeroList;
 
-public class HeroOption {
+import java.io.Serializable;
+
+public class HeroOption implements Serializable {
 
     private int imageId;
     private String typeName;

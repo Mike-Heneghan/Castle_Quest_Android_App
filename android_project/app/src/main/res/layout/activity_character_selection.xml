@@ -8,13 +8,11 @@
 
     <TextView
         android:id="@+id/characterSelectiontTitleTextViewId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="329dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/bungee_shade"
         android:gravity="center_vertical|center_horizontal"
@@ -23,8 +21,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/characterSelectionListViewId"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.444" />
 
     <Button
         android:id="@+id/createPartyButtonId"

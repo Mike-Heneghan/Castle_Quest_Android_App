@@ -38,7 +38,9 @@ public class DifficultyActivity extends AppCompatActivity {
         Game game = new Game(userName, 3);
         ApplicationState applicationState = new ApplicationState(game);
         SharedPreferenceHelper.saveApplicationState(this, applicationState);
-
+        Intent intent2 = new Intent(this, CharacterSelectionActivity.class);
+        intent.putExtra("guess", intent);
+        startActivity(intent2);
     }
 
     public void onMediumDifficultyButtonClicked(View button){
@@ -49,6 +51,7 @@ public class DifficultyActivity extends AppCompatActivity {
         ApplicationState applicationState = new ApplicationState(game);
         SharedPreferenceHelper.saveApplicationState(this, applicationState);
 
+        startActivity(intent);
     }
 
     public void onHardDifficultyButtonClicked(View button){
@@ -59,5 +62,6 @@ public class DifficultyActivity extends AppCompatActivity {
         ApplicationState applicationState = new ApplicationState(game);
         SharedPreferenceHelper.saveApplicationState(this, applicationState);
 
+        startActivity(intent);
     }
 }
