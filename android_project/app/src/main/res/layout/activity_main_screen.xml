@@ -8,7 +8,7 @@
     tools:context=".DragonCastle.Activities.MainScreen">
 
     <TextView
-        android:id="@+id/titletextViewId"
+        android:id="@+id/titleMainActivityId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -27,7 +27,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/beginAdventureButtonId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="28dp"
@@ -62,7 +62,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textSize="30sp"
         android:textStyle="italic"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/beginAdventureButtonId"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>
