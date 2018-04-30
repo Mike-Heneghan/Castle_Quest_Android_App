@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.mike.fantasygame.DragonCastle.DataPeristence.ApplicationState;
+import com.example.mike.fantasygame.DragonCastle.DataPeristence.SharedPreferenceHelper;
+import com.example.mike.fantasygame.DragonCastle.Game.Game;
 import com.example.mike.fantasygame.R;
 
 public class DifficultyActivity extends AppCompatActivity {
@@ -21,9 +24,6 @@ public class DifficultyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_difficulty);
 
-        Intent intent = getIntent();
-        Bundle extras = intent.getExtras();
-        String userName = extras.getString("userName", "Name");
 
         selectDifficultyTextView = findViewById(R.id.selectDifficultyTextViewId);
         easyDifficultyButton = findViewById(R.id.easyDifficultyButtonId);
@@ -32,6 +32,32 @@ public class DifficultyActivity extends AppCompatActivity {
     }
 
     public void onEasyDifficultyButtonClicked(View button){
+        Intent intent = getIntent();
+        Bundle extras = intent.getExtras();
+        String userName = extras.getString("userName", "Name");
+        Game game = new Game(userName, 3);
+        ApplicationState applicationState = new ApplicationState(game);
+        SharedPreferenceHelper.saveApplicationState(this, applicationState);
+
+    }
+
+    public void onMediumDifficultyButtonClicked(View button){
+        Intent intent = getIntent();
+        Bundle extras = intent.getExtras();
+        String userName = extras.getString("userName", "Name");
+        Game game = new Game(userName, 5);
+        ApplicationState applicationState = new ApplicationState(game);
+        SharedPreferenceHelper.saveApplicationState(this, applicationState);
+
+    }
+
+    public void onHardDifficultyButtonClicked(View button){
+        Intent intent = getIntent();
+        Bundle extras = intent.getExtras();
+        String userName = extras.getString("userName", "Name");
+        Game game = new Game(userName, 10);
+        ApplicationState applicationState = new ApplicationState(game);
+        SharedPreferenceHelper.saveApplicationState(this, applicationState);
 
     }
 }

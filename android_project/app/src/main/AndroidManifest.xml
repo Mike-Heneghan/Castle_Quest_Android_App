@@ -19,8 +19,8 @@
         <activity
             android:name=".DragonCastle.Activities.DifficultyActivity"
             android:label="@string/difficult_title"
-            android:parentActivityName=".DragonCastle.Activities.MainScreen"
-            ></activity>
+            android:parentActivityName=".DragonCastle.Activities.MainScreen" />
+        <activity android:name=".CharacterSelectionActivity"></activity>
     </application>
 
 </manifest>

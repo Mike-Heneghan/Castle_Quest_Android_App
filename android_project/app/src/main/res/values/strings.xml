@@ -8,4 +8,5 @@
     <string name="easy">Easy: 3 Rooms</string>
     <string name="medium">Medium: 5 Rooms</string>
     <string name="hard">Hard: 10 Rooms</string>
+    <string name="title_activity_character_selection">CharacterSelectionActivity</string>
 </resources>
