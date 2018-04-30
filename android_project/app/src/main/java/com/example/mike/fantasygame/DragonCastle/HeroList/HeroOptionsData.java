@@ -14,4 +14,8 @@ public class HeroOptionsData {
         list.add(3, new HeroOption(4, "Warlock", "The Warlock is trained in magic and can cast powerful spells as well as taming wild creatures to their will.", "HP: 100", "The Warlock attacks their enemy with a powerful spell.", "The Warlock's tamed creature attacks with all their might often missing but immensely powerful when successful"));
         list.add(4, new HeroOption(5, "Cleric", "The Cleric is a pacifist who has sworn an oath to cause no harm but help the just.", "HP: 100", "The Cleric heals the hero in most need.", "The Cleric can defy his holy orders and try to resurrect the dead or heal an ally beyond their natural levels."));
     }
+
+    public ArrayList<HeroOption> getList() {
+        return list;
+    }
 }
