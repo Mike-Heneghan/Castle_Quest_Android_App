@@ -19,6 +19,7 @@ public class Creature extends Character {
         this.mv1ChanceValue = type.getMv1ChanceValue();
         this.mv2DamageValue = type.getMv2DamageValue();
         this.mv2ChanceValue = type.getMv2ChanceValue();
+        this.imageId = type.getImageId();
     }
 
     public CreatureType getType() {
