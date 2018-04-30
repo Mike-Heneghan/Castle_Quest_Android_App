@@ -25,7 +25,7 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Room.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Room.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/Room/Room.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="-267">
@@ -61,7 +61,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="CreatureType.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="CreatureType.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/Characters/Creatures/CreatureType.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="342">
@@ -151,18 +151,18 @@
           <file leaf-file-name="GameTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/GameTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="143" column="0" lean-forward="false" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
+                <state relative-caret-position="364">
+                  <caret line="142" column="5" lean-forward="true" selection-start-line="142" selection-start-column="5" selection-end-line="142" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="RoomTest.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="RoomTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/RoomTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="601">
-                  <caret line="173" column="0" lean-forward="true" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
+                <state relative-caret-position="218">
+                  <caret line="161" column="4" lean-forward="false" selection-start-line="161" selection-start-column="4" selection-end-line="161" selection-end-column="4" />
                   <folding>
                     <element signature="e#1382#1383#0" expanded="true" />
                     <element signature="e#1439#1440#0" expanded="true" />
@@ -171,10 +171,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Creature.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Creature.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/Characters/Creatures/Creature.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
+                <state relative-caret-position="208">
                   <caret line="19" column="55" lean-forward="true" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
                   <folding />
                 </state>
@@ -503,7 +503,6 @@
         <option value="$PROJECT_DIR$/src/test/java/WarlockTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/CreatureTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/GameTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RoomTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Room/Room.java" />
         <option value="$PROJECT_DIR$/src/main/java/Characters/Character.java" />
         <option value="$PROJECT_DIR$/src/main/java/Characters/Heroes/Fighters/Knight.java" />
@@ -513,6 +512,7 @@
         <option value="$PROJECT_DIR$/src/main/java/Characters/Heroes/Healers/Cleric.java" />
         <option value="$PROJECT_DIR$/src/main/java/Characters/Creatures/Creature.java" />
         <option value="$PROJECT_DIR$/src/main/java/Characters/Creatures/CreatureType.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RoomTest.java" />
       </list>
     </option>
   </component>
@@ -633,6 +633,19 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Room" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fantasyGameHomework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cc_wk7_wknd_homework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="fantasyGameHomework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cc_wk7_wknd_homework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -873,15 +886,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_fantasyGameHomework_test - 2018.04.30 at 12h 04m 35s.xml">
-      <configuration name="All in fantasyGameHomework_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_fantasyGameHomework_test - 2018.04.30 at 12h 09m 45s.xml">
-      <configuration name="All in fantasyGameHomework_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_fantasyGameHomework_test - 2018.04.30 at 12h 10m 06s.xml">
-      <configuration name="All in fantasyGameHomework_test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_fantasyGameHomework_test - 2018.04.30 at 12h 10m 32s.xml">
       <configuration name="All in fantasyGameHomework_test" configurationId="JUnit" />
     </history-entry>
@@ -901,6 +905,15 @@
       <configuration name="All in fantasyGameHomework_test" configurationId="JUnit" />
     </history-entry>
     <history-entry file="All_in_fantasyGameHomework_test - 2018.04.30 at 12h 14m 46s.xml">
+      <configuration name="All in fantasyGameHomework_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_fantasyGameHomework_test - 2018.04.30 at 12h 16m 42s.xml">
+      <configuration name="All in fantasyGameHomework_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_fantasyGameHomework_test - 2018.04.30 at 12h 17m 10s.xml">
+      <configuration name="All in fantasyGameHomework_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_fantasyGameHomework_test - 2018.04.30 at 12h 17m 13s.xml">
       <configuration name="All in fantasyGameHomework_test" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -927,7 +940,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.04352941" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14117648" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -944,7 +957,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1300,14 +1313,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/GameTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="143" column="0" lean-forward="false" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Characters/Heroes/Hero.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -1339,35 +1344,6 @@
           <folding>
             <element signature="e#3255#3256#0" expanded="true" />
             <element signature="e#3336#3337#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Game/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="68" column="39" lean-forward="false" selection-start-line="68" selection-start-column="39" selection-end-line="68" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Room/Room.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-267">
-          <caret line="34" column="24" lean-forward="true" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-          <folding>
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#782#783#0" expanded="true" />
-            <element signature="e#819#820#0" expanded="true" />
-            <element signature="e#850#851#0" expanded="true" />
-            <element signature="e#892#893#0" expanded="true" />
-            <element signature="e#921#922#0" expanded="true" />
-            <element signature="e#958#959#0" expanded="true" />
-            <element signature="e#997#998#0" expanded="true" />
-            <element signature="e#1036#1037#0" expanded="true" />
-            <element signature="e#1068#1069#0" expanded="true" />
-            <element signature="e#1142#1143#0" expanded="true" />
-            <element signature="e#1184#1185#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1412,17 +1388,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RoomTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="173" column="0" lean-forward="true" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
-          <folding>
-            <element signature="e#1382#1383#0" expanded="true" />
-            <element signature="e#1439#1440#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Characters/Heroes/Healers/Cleric.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1444,9 +1409,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Characters/Creatures/Creature.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="208">
           <caret line="19" column="55" lean-forward="true" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/GameTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="142" column="5" lean-forward="true" selection-start-line="142" selection-start-column="5" selection-end-line="142" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Game/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="68" column="39" lean-forward="false" selection-start-line="68" selection-start-column="39" selection-end-line="68" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Room/Room.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-267">
+          <caret line="34" column="24" lean-forward="true" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+          <folding>
+            <element signature="e#752#753#0" expanded="true" />
+            <element signature="e#782#783#0" expanded="true" />
+            <element signature="e#819#820#0" expanded="true" />
+            <element signature="e#850#851#0" expanded="true" />
+            <element signature="e#892#893#0" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
+            <element signature="e#958#959#0" expanded="true" />
+            <element signature="e#997#998#0" expanded="true" />
+            <element signature="e#1036#1037#0" expanded="true" />
+            <element signature="e#1068#1069#0" expanded="true" />
+            <element signature="e#1142#1143#0" expanded="true" />
+            <element signature="e#1184#1185#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RoomTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="161" column="4" lean-forward="false" selection-start-line="161" selection-start-column="4" selection-end-line="161" selection-end-column="4" />
+          <folding>
+            <element signature="e#1382#1383#0" expanded="true" />
+            <element signature="e#1439#1440#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

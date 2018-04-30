@@ -159,7 +159,7 @@ public class RoomTest {
         answer.add(fullroom.getMonster().getName() + " missed " + fullroom.getHeroes().get(0).getName() + "!");
         assertEquals(answer, Narrator.getInstance().tellTale());
     }
-
+    
 
 //    @Test
 //    public void monsterCanAttackHeroes(){
