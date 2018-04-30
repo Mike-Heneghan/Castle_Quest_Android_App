@@ -1,6 +1,8 @@
 package com.example.mike.fantasygame.DragonCastleTests;
 
-import DragonCastle.Characters.Creatures.CreatureType;
+
+import com.example.mike.fantasygame.DragonCastle.Characters.Creatures.CreatureType;
+
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

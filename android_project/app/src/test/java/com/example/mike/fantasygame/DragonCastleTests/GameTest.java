@@ -1,20 +1,18 @@
 package com.example.mike.fantasygame.DragonCastleTests;
 
-import DragonCastle.Characters.Creatures.Creature;
-import DragonCastle.Characters.Creatures.CreatureType;
-import DragonCastle.Characters.Heroes.Fighters.Barbarian;
-import DragonCastle.Characters.Heroes.Fighters.Dwarf;
-import DragonCastle.Characters.Heroes.Fighters.Knight;
-import DragonCastle.Characters.Heroes.Healers.Cleric;
-import DragonCastle.Characters.Heroes.Hero;
-import DragonCastle.Characters.Heroes.Mages.Spell;
-import DragonCastle.Characters.Heroes.Mages.Warlock;
+import com.example.mike.fantasygame.*;
+import com.example.mike.fantasygame.DragonCastle.Characters.Creatures.Creature;
+import com.example.mike.fantasygame.DragonCastle.Characters.Creatures.CreatureType;
+import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Fighters.Barbarian;
+import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Fighters.Dwarf;
+import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Fighters.Knight;
+import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Healers.Cleric;
+import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Hero;
+import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Mages.Warlock;
+import com.example.mike.fantasygame.DragonCastle.Game.Game;
+
 import org.junit.Before;
 import org.junit.Test;
-
-import DragonCastle.Game.Game;
-import DragonCastle.Characters.Character;
-import DragonCastle.Characters.*;
 
 import static org.junit.Assert.assertEquals;
 

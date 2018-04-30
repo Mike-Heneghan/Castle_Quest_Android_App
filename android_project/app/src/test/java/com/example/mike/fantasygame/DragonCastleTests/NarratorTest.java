@@ -1,6 +1,8 @@
 package com.example.mike.fantasygame.DragonCastleTests;
 
-import DragonCastle.Characters.Narrator;
+
+import com.example.mike.fantasygame.DragonCastle.Characters.Narrator;
+
 import org.junit.Before;
 import org.junit.Test;
 

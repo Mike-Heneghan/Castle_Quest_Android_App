@@ -1,9 +1,11 @@
 package com.example.mike.fantasygame.DragonCastleTests;
 
-import DragonCastle.Characters.Creatures.Creature;
-import DragonCastle.Characters.Creatures.CreatureType;
-import DragonCastle.Characters.Heroes.Fighters.Barbarian;
-import DragonCastle.Characters.Heroes.Fighters.Weapon;
+
+import com.example.mike.fantasygame.DragonCastle.Characters.Creatures.Creature;
+import com.example.mike.fantasygame.DragonCastle.Characters.Creatures.CreatureType;
+import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Fighters.Barbarian;
+import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Fighters.Weapon;
+
 import org.junit.Before;
 import org.junit.Test;
 

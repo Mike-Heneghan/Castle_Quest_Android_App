@@ -1,8 +1,10 @@
 package com.example.mike.fantasygame.DragonCastleTests;
 
-import DragonCastle.Characters.Creatures.Creature;
-import DragonCastle.Characters.Creatures.CreatureType;
-import DragonCastle.Characters.Heroes.Healers.Cleric;
+
+import com.example.mike.fantasygame.DragonCastle.Characters.Creatures.Creature;
+import com.example.mike.fantasygame.DragonCastle.Characters.Creatures.CreatureType;
+import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Healers.Cleric;
+
 import org.junit.Before;
 import org.junit.Test;
 

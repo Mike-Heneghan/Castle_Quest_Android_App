@@ -1,7 +1,7 @@
 package com.example.mike.fantasygame.DragonCastle.Game;
 
 import com.example.mike.fantasygame.DragonCastle.Characters.Creatures.Creature;
-import DragonCastle.Characters.Heroes.*;
+
 import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Fighters.Dwarf;
 import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Fighters.Knight;
 import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Fighters.Barbarian;

@@ -1,10 +1,13 @@
 package com.example.mike.fantasygame.DragonCastleTests;
 
-import DragonCastle.Characters.Heroes.Healers.HealingTool;
-import DragonCastle.Characters.Heroes.Treasure;
+
+import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Healers.Cleric;
+import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Healers.HealingTool;
+import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Treasure;
+
 import org.junit.Before;
 import org.junit.Test;
-import DragonCastle.Characters.Heroes.Healers.Cleric;
+
 
 import static org.junit.Assert.assertEquals;
 

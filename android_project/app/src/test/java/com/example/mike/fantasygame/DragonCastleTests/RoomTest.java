@@ -1,14 +1,14 @@
 package com.example.mike.fantasygame.DragonCastleTests;
 
-import DragonCastle.Characters.Creatures.Creature;
-import DragonCastle.Characters.Creatures.CreatureType;
-import DragonCastle.Characters.Heroes.Fighters.Knight;
-import DragonCastle.Characters.Heroes.Healers.Cleric;
-import DragonCastle.Characters.Heroes.Hero;
-import DragonCastle.Characters.Heroes.Mages.Spell;
-import DragonCastle.Characters.Heroes.Mages.Warlock;
-import DragonCastle.Characters.Narrator;
-import DragonCastle.Room.Room;
+import com.example.mike.fantasygame.DragonCastle.Characters.Creatures.Creature;
+import com.example.mike.fantasygame.DragonCastle.Characters.Creatures.CreatureType;
+import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Fighters.Knight;
+import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Healers.Cleric;
+import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Hero;
+import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Mages.Warlock;
+import com.example.mike.fantasygame.DragonCastle.Characters.Narrator;
+import com.example.mike.fantasygame.DragonCastle.Room.Room;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -112,7 +112,7 @@ public class RoomTest {
         fullroom.heroStandardMove(hero1);
         ArrayList<String> answer = new ArrayList<>();
         answer.add(hero1.getName() + " is dead!");
-        assertEquals(answer,Narrator.getInstance().tellTale());
+        assertEquals(answer, Narrator.getInstance().tellTale());
     }
 
 //    Random Result Test
