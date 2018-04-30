@@ -151,14 +151,14 @@ public class RoomTest {
         assertEquals(answer, Narrator.getInstance().tellTale());
     }
 //
-//    @Test
-//    public void monsterAttacksRandomAliveHero(){
-//        fullroom.getHeroes().get(1).setHp(0);
-//        fullroom.monsterAttacks();
-//        ArrayList<String> answer = new ArrayList<>();
-//        answer.add(fullroom.getMonster().getName() + " missed " + fullroom.getHeroes().get(0).getName() + "!");
-//        assertEquals(answer, Narrator.getInstance().tellTale());
-//    }
+    @Test
+    public void monsterAttacksRandomAliveHero(){
+        fullroom.getHeroes().get(1).setHp(0);
+        fullroom.monsterAttacks();
+        ArrayList<String> answer = new ArrayList<>();
+        answer.add(fullroom.getMonster().getName() + " missed " + fullroom.getHeroes().get(0).getName() + "!");
+        assertEquals(answer, Narrator.getInstance().tellTale());
+    }
 
 
 //    @Test
