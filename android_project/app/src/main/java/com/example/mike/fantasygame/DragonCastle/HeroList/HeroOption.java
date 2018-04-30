@@ -1,4 +1,4 @@
-package com.example.mike.fantasygame.DragonCastle.Characters;
+package com.example.mike.fantasygame.DragonCastle.HeroList;
 
 public class HeroOption {
 
