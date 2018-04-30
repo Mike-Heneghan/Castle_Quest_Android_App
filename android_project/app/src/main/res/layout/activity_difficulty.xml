@@ -8,7 +8,7 @@
     tools:context=".DragonCastle.Activities.DifficultyActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/selectDifficultyTextViewId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -20,7 +20,8 @@
         android:gravity="center_vertical|center_horizontal"
         android:text="@string/difficult_title"
         android:textColor="@android:color/black"
-        android:textSize="36sp"
+        android:textSize="50sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -36,10 +37,11 @@
         android:layout_marginTop="60dp"
         android:fontFamily="@font/bungee"
         android:text="@string/easy"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/selectDifficultyTextViewId" />
 
     <Button
         android:id="@+id/hardDifficultyButtonId"
@@ -52,6 +54,7 @@
         android:layout_marginStart="8dp"
         android:fontFamily="@font/bungee"
         android:text="@string/hard"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -69,6 +72,7 @@
         android:layout_marginTop="8dp"
         android:fontFamily="@font/bungee"
         android:text="@string/medium"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/hardDifficultyButtonId"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
