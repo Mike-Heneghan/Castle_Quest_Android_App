@@ -100,6 +100,8 @@ public class Room {
         return heroToHeal;
     }
 
+
+
 //    //For encounter- collectTreasure to be used as a conditional if any heroes remain alive.
 //    public void heroesCollectTreasure(){
 //        Hero hero = heroes.get(0);
