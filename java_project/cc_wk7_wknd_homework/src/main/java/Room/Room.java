@@ -8,7 +8,11 @@ import Characters.Heroes.Hero;
 import Characters.Heroes.Treasure;
 import Characters.Narrator;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Random;
 
 public class Room {
 
@@ -100,7 +104,39 @@ public class Room {
         return heroToHeal;
     }
 
+    public void monsterAttacks(){
+        Hero heroTarget = this.returnRandomAliveHero();
+        if (monster.getHp() > 0){
+            if(this.returnFiftyFifty() < 2 ){
+                Narrator.getInstance().addStoryLine(monster.standardMove(heroTarget));
+            }
+            else Narrator.getInstance().addStoryLine(monster.signatureMove(heroTarget));
+        }
+        else Narrator.getInstance().addStoryLine(monster.getName() + " is dead!");
+    }
 
+    public Hero returnRandomAliveHero(){
+        Hero heroToAttack = null;
+        ArrayList<Hero> aliveHeroes = this.returnAliveHeroes();
+        Collections.shuffle(aliveHeroes);
+        heroToAttack = aliveHeroes.get(0);
+        return heroToAttack;
+    }
+
+    public ArrayList<Hero> returnAliveHeroes(){
+        ArrayList<Hero> aliveHeroes = new ArrayList<>();
+        for (Hero h: heroes){
+            if (h.getHp() > 0){
+                aliveHeroes.add(h);
+            }
+        }
+        return aliveHeroes;
+    }
+
+    public int returnFiftyFifty(){
+        Random rand = new Random();
+        return (1 + rand.nextInt((2 - 1) + 1));
+    }
 
 //    //For encounter- collectTreasure to be used as a conditional if any heroes remain alive.
 //    public void heroesCollectTreasure(){

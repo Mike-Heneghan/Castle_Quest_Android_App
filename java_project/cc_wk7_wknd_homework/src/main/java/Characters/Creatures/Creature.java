@@ -46,9 +46,9 @@ public class Creature extends Character {
     public String standardMove(Character characterToAttack){
         if(shouldDoMove(this.mv1ChanceValue))
         {characterToAttack.takeDamage(this.mv1DamageValue);
-        return this.getName() + " attacked " + characterToAttack.getName() + " successfully ";
+        return this.getName() + " attacked " + characterToAttack.getName() + " successfully.";
         }
-        return this.getName() + " missed!";
+        return this.getName() + " missed " + characterToAttack.getName() + "!";
     }
 
     //move2. This move uses the second move in the creature's enum.
