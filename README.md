@@ -24,3 +24,15 @@
 <li><a href="https://trello.com/b/Lnvtm6bg/fantasy-game-android-app">Trello Board</a></li>
 <li><a href="https://drive.google.com/drive/folders/1UFe1l7P_-I_ZdvmIZZh1J4iocaAt4EX5">Google Drive Folder</a></li>
 </ul>
+<h2>Character Image IDs</h2>
+<ol>
+  <li>Knight</li>
+  <li>Dwarf</li>
+  <li>Barbarian</li>
+  <li>Warlock</li>
+  <li>Cleric</li>
+  <li>Troll</li>
+  <li>Dragon</li>
+  <li>Giant Spider</li>
+  <li>Ex</li>
+</ol>
