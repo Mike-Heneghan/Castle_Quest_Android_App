@@ -7,6 +7,7 @@ public class Barbarian extends Fighter {
 
     public Barbarian(String name){
         super(name);
+        this.imageId = 3;
         weapon = Weapon.CLUB;
         defence = Defence.ARMGUARDS;
         rageChance = 6;

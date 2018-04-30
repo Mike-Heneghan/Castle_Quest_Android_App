@@ -6,6 +6,7 @@ public class Knight extends Fighter {
 
     public Knight(String name){
         super(name);
+        this.imageId = 1;
         this.weapon = Weapon.SWORD;
         this.defence = Defence.SHIELD;
     }

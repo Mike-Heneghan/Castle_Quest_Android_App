@@ -6,9 +6,11 @@ public abstract class Character {
 
     protected String name;
     protected int hp;
+    protected int imageId;
 
     public Character(String name){
         this.name = name;
+        this.imageId = 0;
         this.hp = 100;
     }
 

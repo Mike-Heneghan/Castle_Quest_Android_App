@@ -9,6 +9,7 @@ public class Dwarf extends Fighter{
 
     public Dwarf(String name){
         super(name);
+        this.imageId = 2;
         weapon = Weapon.AXE;
         defence = Defence.ARMOUR;
         throwingAxes = new ArrayList<>();
