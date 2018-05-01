@@ -3,11 +3,15 @@ package com.example.mike.fantasygame.DragonCastle.Activities;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Fighters.Knight;
+import com.example.mike.fantasygame.DragonCastle.DataPeristence.ApplicationState;
+import com.example.mike.fantasygame.DragonCastle.DataPeristence.SharedPreferenceHelper;
 import com.example.mike.fantasygame.DragonCastle.HeroList.HeroOption;
 import com.example.mike.fantasygame.R;
 
@@ -49,7 +53,40 @@ public class HeroOptionDetailedActivity extends AppCompatActivity {
 
         this.heroMove2TextViewId = findViewById(R.id.heroMove2TextViewId);
         heroMove2TextViewId.setText(heroOption.getMove2Description().toString());
+        this.heroNameEditTextView = findViewById(R.id.heroNameEditTextViewId);
 
 
     }
+
+    public void onAddHeroButtonClicked(View button) {
+        String heroName = heroNameEditTextView.getText().toString();
+        Intent intent = getIntent();
+        HeroOption heroOption = ((HeroOption) intent.getSerializableExtra("heroOption"));
+        ApplicationState applicationState = SharedPreferenceHelper.loadApplicationState(this);
+        if (heroOption.getTypeName() == "Knight") {
+            applicationState.getGame().addKnight(heroName);
+            SharedPreferenceHelper.saveApplicationState(this, applicationState);
+        }
+        if (heroOption.getTypeName() == "Dwarf") {
+            applicationState.getGame().addDwarf(heroName);
+            SharedPreferenceHelper.saveApplicationState(this, applicationState);
+        }
+        if (heroOption.getTypeName() == "Barbarian") {
+            applicationState.getGame().addBarbarian(heroName);
+            SharedPreferenceHelper.saveApplicationState(this, applicationState);
+        }
+        if (heroOption.getTypeName() == "Warlock") {
+            applicationState.getGame().addWarlock(heroName);
+            SharedPreferenceHelper.saveApplicationState(this, applicationState);
+        }
+        if (heroOption.getTypeName() == "Cleric") {
+            applicationState.getGame().addCleric(heroName);
+            SharedPreferenceHelper.saveApplicationState(this, applicationState);
+        }
+
+    }
+
+//    public void getHeroType(){
+//
+//    }
 }
