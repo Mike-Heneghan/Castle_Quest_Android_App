@@ -65,40 +65,38 @@ public class HeroOptionDetailedActivity extends AppCompatActivity {
         Intent intent = getIntent();
         HeroOption heroOption = ((HeroOption) intent.getSerializableExtra("heroOption"));
         ApplicationState applicationState = SharedPreferenceHelper.loadApplicationState(this);
-    }}
-//
-//        if(heroOption.getTypeName().toString().equals("Knight")) {
-//            applicationState.getGame().addKnight(heroName);
-//            SharedPreferenceHelper.saveApplicationState(this, applicationState);
-//        }
-//
-//        else if (heroOption.getTypeName().equals("Dwarf")) {
-//            applicationState.getGame().addDwarf(heroName);
-//            SharedPreferenceHelper.saveApplicationState(this, applicationState);
-//            finish();
-//        }
-//        else if (heroOption.getTypeName().equals("Barbarian")) {
-//            applicationState.getGame().addBarbarian(heroName);
-//            SharedPreferenceHelper.saveApplicationState(this, applicationState);
-//            finish();
-//        }
-//        else if (heroOption.getTypeName().equals("Warlock")) {
-//            applicationState.getGame().addWarlock(heroName);
-//            SharedPreferenceHelper.saveApplicationState(this, applicationState);
-//            finish();
-//        }
-//        else if (heroOption.getTypeName().equals("Cleric")) {
-//            applicationState.getGame().addCleric(heroName);
-//            SharedPreferenceHelper.saveApplicationState(this, applicationState);
-//            finish();
-//        }
-//        else {finish();}
-//
-//        }
-//
-//        public void onBackButtonClicked(View button){
-//            finish();
-//        }
-//
-//
-//}
+
+        if(heroOption.getTypeName().toString().equals("Knight")) {
+           applicationState.getGame().addKnight(heroName);
+            SharedPreferenceHelper.saveApplicationState(this, applicationState);
+        }
+
+        else if (heroOption.getTypeName().equals("Dwarf")) {
+            applicationState.getGame().addDwarf(heroName);
+            SharedPreferenceHelper.saveApplicationState(this, applicationState);
+            finish();
+        }
+        else if (heroOption.getTypeName().equals("Barbarian")) {
+            applicationState.getGame().addBarbarian(heroName);
+            SharedPreferenceHelper.saveApplicationState(this, applicationState);
+            finish();
+        }
+        else if (heroOption.getTypeName().equals("Warlock")) {
+            applicationState.getGame().addWarlock(heroName);
+            SharedPreferenceHelper.saveApplicationState(this, applicationState);
+            finish();
+        }
+        else if (heroOption.getTypeName().equals("Cleric")) {
+            applicationState.getGame().addCleric(heroName);
+            SharedPreferenceHelper.saveApplicationState(this, applicationState);
+            finish();
+        }
+        else {finish();}
+
+        }
+        public void onBackButtonClicked(View button){
+            finish();
+        }
+
+
+}

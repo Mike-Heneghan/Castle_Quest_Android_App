@@ -1,9 +1,9 @@
 package com.example.mike.fantasygame.DragonCastle.Characters.Creatures;
 
-import java.io.Serializable;
+
 import java.util.Random;
 
-public enum CreatureType  implements Serializable {
+public enum CreatureType{
 
     TROLL("Trolly", 100, 30, 8, 90, 2, 6 ),
     DRAGON("Dragony", 150, 40, 6, 95, 2, 7),

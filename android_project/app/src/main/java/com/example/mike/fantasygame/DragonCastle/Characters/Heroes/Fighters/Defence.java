@@ -1,8 +1,8 @@
 package com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Fighters;
 
-import java.io.Serializable;
 
-public enum Defence  implements Serializable {
+
+public enum Defence {
 
     SHIELD(0.5),
     ARMOUR(0.75),

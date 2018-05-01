@@ -1,9 +1,9 @@
 package com.example.mike.fantasygame.DragonCastle.Characters.Heroes;
 
-import java.io.Serializable;
+
 import java.util.Random;
 
-public enum Treasure  implements Serializable {
+public enum Treasure{
 
     GOLDCUP(30),
     GOLDCOIN(20),

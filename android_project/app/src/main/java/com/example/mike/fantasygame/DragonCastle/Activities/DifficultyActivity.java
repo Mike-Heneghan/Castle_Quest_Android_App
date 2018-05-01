@@ -35,39 +35,35 @@ public class DifficultyActivity extends AppCompatActivity {
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
         String userName = extras.getString("userName", "Name");
-//
-        String mike = "Banananana";
-        ApplicationState applicationState = new ApplicationState(mike);
+        Game game = new Game(userName, 3);
+        ApplicationState applicationState = new ApplicationState(game);
         SharedPreferenceHelper.saveApplicationState(this, applicationState);
-        ApplicationState applicationState1 = SharedPreferenceHelper.loadApplicationState(this);
-        applicationState1.getGame();
+        Intent intent2 = new Intent(this, CharacterSelectionActivity.class);
+        intent.putExtra("guess", intent);
+        startActivity(intent2);
+    }
+
+    public void onMediumDifficultyButtonClicked(View button){
+        Intent intent = getIntent();
+        Bundle extras = intent.getExtras();
+        String userName = extras.getString("userName", "Name");
+        Game game = new Game(userName, 5);
+        ApplicationState applicationState = new ApplicationState(game);
+        SharedPreferenceHelper.saveApplicationState(this, applicationState);
+        Intent intent2 = new Intent(this, CharacterSelectionActivity.class);
+        intent.putExtra("guess", intent);
+        startActivity(intent2);
+    }
+
+    public void onHardDifficultyButtonClicked(View button){
+        Intent intent = getIntent();
+        Bundle extras = intent.getExtras();
+        String userName = extras.getString("userName", "Name");
+        Game game = new Game(userName, 10);
+        ApplicationState applicationState = new ApplicationState(game);
+        SharedPreferenceHelper.saveApplicationState(this, applicationState);
         Intent intent2 = new Intent(this, CharacterSelectionActivity.class);
         intent.putExtra("guess", intent);
         startActivity(intent2);
     }
 }
-//
-//    public void onMediumDifficultyButtonClicked(View button){
-//        Intent intent = getIntent();
-//        Bundle extras = intent.getExtras();
-//        String userName = extras.getString("userName", "Name");
-//        Game game = new Game(userName, 5);
-//        ApplicationState applicationState = new ApplicationState(game);
-//        SharedPreferenceHelper.saveApplicationState(this, applicationState);
-//        Intent intent2 = new Intent(this, CharacterSelectionActivity.class);
-//        intent.putExtra("guess", intent);
-//        startActivity(intent2);
-//    }
-//
-//    public void onHardDifficultyButtonClicked(View button){
-//        Intent intent = getIntent();
-//        Bundle extras = intent.getExtras();
-//        String userName = extras.getString("userName", "Name");
-//        Game game = new Game(userName, 10);
-//        ApplicationState applicationState = new ApplicationState(game);
-//        SharedPreferenceHelper.saveApplicationState(this, applicationState);
-//        Intent intent2 = new Intent(this, CharacterSelectionActivity.class);
-//        intent.putExtra("guess", intent);
-//        startActivity(intent2);
-//    }
-//}
