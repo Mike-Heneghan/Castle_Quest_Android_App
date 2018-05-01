@@ -1,5 +1,6 @@
 package com.example.mike.fantasygame.DragonCastle.Activities;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Fighters.Knight;
 import com.example.mike.fantasygame.DragonCastle.DataPeristence.ApplicationState;
@@ -73,24 +75,30 @@ public class HeroOptionDetailedActivity extends AppCompatActivity {
         if (heroOption.getTypeName().equals("Dwarf")) {
             applicationState.getGame().addDwarf(heroName);
             SharedPreferenceHelper.saveApplicationState(this, applicationState);
+            finish();
         }
         if (heroOption.getTypeName().equals("Barbarian")) {
             applicationState.getGame().addBarbarian(heroName);
             SharedPreferenceHelper.saveApplicationState(this, applicationState);
+            finish();
         }
         if (heroOption.getTypeName().equals("Warlock")) {
             applicationState.getGame().addWarlock(heroName);
             SharedPreferenceHelper.saveApplicationState(this, applicationState);
+            finish();
         }
         if (heroOption.getTypeName().equals("Cleric")) {
             applicationState.getGame().addCleric(heroName);
             SharedPreferenceHelper.saveApplicationState(this, applicationState);
+            finish();
         }
 
-        else ;
-    }
+        else finish();
+        }
 
-//    public void getHeroType(){
-//
-//    }
+        public void onBackButtonClicked(View button){
+            finish();
+        }
+
+
 }
