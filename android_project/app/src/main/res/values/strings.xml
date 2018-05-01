@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">FantasyGame</string>
+    <string name="app_name">Dragon Castle</string>
+    <string name="app_title">Dragon Castle</string>
+    <string name="app_subtitle">A Heroes Quest!</string>
+    <string name="start_button">Begin Adventure</string>
+    <string name="username_prompt">Input Username</string>
+    <string name="difficult_title">Select Difficulty</string>
+    <string name="easy">Easy: 3 Rooms</string>
+    <string name="medium">Medium: 5 Rooms</string>
+    <string name="hard">Hard: 10 Rooms</string>
+    <string name="title_activity_character_selection">Select Characters</string>
+    <string name="create_party">Create Party</string>
+    <string name="select_hero">Select</string>
+    <string name="hero_name_prompt">Input Hero Name</string>
+    <string name="add_hero_to_party">Add Hero</string>
+    <string name="back_to_character_list">Back</string>
+    <string name="hero_detail_view">Hero Details</string>
 </resources>

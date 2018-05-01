@@ -9,13 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainScreen">
+        <activity android:name=".DragonCastle.Activities.MainScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".DragonCastle.Activities.DifficultyActivity"
+            android:label="@string/difficult_title"
+            android:parentActivityName=".DragonCastle.Activities.MainScreen" />
+        <activity
+            android:name=".DragonCastle.Activities.CharacterSelectionActivity"
+            android:label="@string/title_activity_character_selection"
+            android:parentActivityName=".DragonCastle.Activities.DifficultyActivity"
+            ></activity>
+        <activity
+            android:name=".DragonCastle.Activities.HeroOptionDetailedActivity"
+            android:label="@string/hero_detail_view"
+            android:parentActivityName=".DragonCastle.Activities.CharacterSelectionActivity"></activity>
     </application>
 
 </manifest>
