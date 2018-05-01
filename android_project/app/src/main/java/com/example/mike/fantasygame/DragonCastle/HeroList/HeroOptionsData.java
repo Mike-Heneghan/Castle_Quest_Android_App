@@ -1,8 +1,9 @@
 package com.example.mike.fantasygame.DragonCastle.HeroList;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class HeroOptionsData {
+public class HeroOptionsData implements Serializable {
 
     ArrayList<HeroOption> list;
 

@@ -1,7 +1,10 @@
 package com.example.mike.fantasygame.DragonCastle.Activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ListView;
 
 import com.example.mike.fantasygame.DragonCastle.DataPeristence.ApplicationState;
 import com.example.mike.fantasygame.DragonCastle.DataPeristence.SharedPreferenceHelper;
@@ -23,5 +26,16 @@ public class CharacterSelectionActivity extends AppCompatActivity {
         ArrayList<HeroOption> list = heroOptionsData.getList();
 
         HeroOptionsAdapter heroOptionsAdapter = new HeroOptionsAdapter(this, list);
+
+
+        ListView listView = findViewById(R.id.characterSelectionListViewId);
+        listView.setAdapter(heroOptionsAdapter);
+    }
+
+    public void onHeroSelectButtonClicked (View button){
+        HeroOption heroOption = ((HeroOption) button.getTag());
+        Intent intent = new Intent(this, HeroOptionDetailedActivity.class);
+        intent.putExtra("heroOption", heroOption);
+        startActivity(intent);
     }
 }

@@ -33,8 +33,9 @@ public class HeroOptionsAdapter extends ArrayAdapter<HeroOption> {
         TextView heroTypeNameTextView = characterSelectionListViewId.findViewById(R.id.heroTypeNameTextViewId);
         heroTypeNameTextView.setText(currentHeroOption.getTypeName().toString());
 
-        Button selectForDetailedViewButtonId = characterSelectionListViewId.findViewById(R.id.selectForDetailedViewButtonId);
+        Button selectForDetailedViewButton = characterSelectionListViewId.findViewById(R.id.selectForDetailedViewButtonId);
 
+        selectForDetailedViewButton.setTag(currentHeroOption);
         return characterSelectionListViewId;
     }
 

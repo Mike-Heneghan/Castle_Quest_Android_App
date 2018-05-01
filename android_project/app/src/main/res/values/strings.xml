@@ -11,4 +11,8 @@
     <string name="title_activity_character_selection">Select Characters</string>
     <string name="create_party">Create Party</string>
     <string name="select_hero">Select</string>
+    <string name="hero_name_prompt">Input Hero Name</string>
+    <string name="add_hero_to_party">Add Hero</string>
+    <string name="back_to_character_list">Back</string>
+    <string name="hero_detail_view">Hero Details</string>
 </resources>
