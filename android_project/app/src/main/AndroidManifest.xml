@@ -23,12 +23,12 @@
         <activity
             android:name=".DragonCastle.Activities.CharacterSelectionActivity"
             android:label="@string/title_activity_character_selection"
-            android:parentActivityName=".DragonCastle.Activities.DifficultyActivity"
-            ></activity>
+            android:parentActivityName=".DragonCastle.Activities.DifficultyActivity" />
         <activity
             android:name=".DragonCastle.Activities.HeroOptionDetailedActivity"
             android:label="@string/hero_detail_view"
-            android:parentActivityName=".DragonCastle.Activities.CharacterSelectionActivity"></activity>
+            android:parentActivityName=".DragonCastle.Activities.CharacterSelectionActivity" />
+        <activity android:name=".DragonCastle.Activities.FightActivity"></activity>
     </application>
 
 </manifest>
