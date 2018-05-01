@@ -5,7 +5,7 @@ import com.example.mike.fantasygame.DragonCastle.Characters.Character;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-public abstract class Hero extends Character implements Serializable {
+public class Hero extends Character implements Serializable {
 
     private ArrayList<Treasure> inventory;
     private String type;

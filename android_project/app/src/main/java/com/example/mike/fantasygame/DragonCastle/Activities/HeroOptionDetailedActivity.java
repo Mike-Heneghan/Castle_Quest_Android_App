@@ -69,6 +69,7 @@ public class HeroOptionDetailedActivity extends AppCompatActivity {
         if(heroOption.getTypeName().toString().equals("Knight")) {
            applicationState.getGame().addKnight(heroName);
             SharedPreferenceHelper.saveApplicationState(this, applicationState);
+            finish();
         }
 
         else if (heroOption.getTypeName().equals("Dwarf")) {
