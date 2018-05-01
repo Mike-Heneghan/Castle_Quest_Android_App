@@ -1,8 +1,9 @@
 package com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Fighters;
 
+import java.io.Serializable;
 import java.util.Random;
 
-public enum Weapon {
+public enum Weapon implements Serializable{
 
     SWORD(20, 10),
     CLUB(30, 8),

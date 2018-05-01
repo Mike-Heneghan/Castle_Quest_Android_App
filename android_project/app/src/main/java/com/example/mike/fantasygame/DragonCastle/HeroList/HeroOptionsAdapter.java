@@ -11,9 +11,10 @@ import android.widget.TextView;
 
 import com.example.mike.fantasygame.R;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class HeroOptionsAdapter extends ArrayAdapter<HeroOption> {
+public class HeroOptionsAdapter extends ArrayAdapter<HeroOption> implements Serializable {
 
     public HeroOptionsAdapter(Context context, ArrayList<HeroOption> heroOptions){
         super(context, 0, heroOptions);

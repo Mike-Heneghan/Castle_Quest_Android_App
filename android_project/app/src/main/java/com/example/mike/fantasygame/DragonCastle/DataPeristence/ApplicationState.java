@@ -1,18 +1,22 @@
 package com.example.mike.fantasygame.DragonCastle.DataPeristence;
 
 import com.example.mike.fantasygame.DragonCastle.Game.Game;
+import com.example.mike.fantasygame.DragonCastle.Game.SerializableGame;
 import com.example.mike.fantasygame.DragonCastle.Room.Room;
 
-public class ApplicationState {
+import java.io.Serializable;
 
-    private Game game;
+public class ApplicationState implements Serializable {
 
-    public ApplicationState(Game game){
-        this.game = game;
+    private SerializableGame serializableGame;
+
+
+    public ApplicationState(SerializableGame serializableGame){
+        this.serializableGame = serializableGame;
     }
 
-    public Game getGame(){
-        return this.game;
+    public SerializableGame getGame(){
+        return this.serializableGame;
     }
 
 }

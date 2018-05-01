@@ -30,7 +30,6 @@ public class HeroOptionDetailedActivity extends AppCompatActivity {
     private Button backButtonId;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,41 +60,41 @@ public class HeroOptionDetailedActivity extends AppCompatActivity {
 
     }
 
-        public void onAddHeroButtonClicked(View button) {
+    public void onAddHeroButtonClicked(View button) {
         String heroName = heroNameEditTextView.getText().toString();
         Intent intent = getIntent();
         HeroOption heroOption = ((HeroOption) intent.getSerializableExtra("heroOption"));
         ApplicationState applicationState = SharedPreferenceHelper.loadApplicationState(this);
-
-        if (heroOption.getTypeName().equals("Knight")) {
-            applicationState.getGame().addKnight(heroName);
+        applicationState.getGame();
+        if(heroOption.getTypeName().toString().equals("Knight")) {
+           applicationState.getGame().addKnight(heroName);
             SharedPreferenceHelper.saveApplicationState(this, applicationState);
             finish();
         }
-        if (heroOption.getTypeName().equals("Dwarf")) {
+
+        else if (heroOption.getTypeName().equals("Dwarf")) {
             applicationState.getGame().addDwarf(heroName);
             SharedPreferenceHelper.saveApplicationState(this, applicationState);
             finish();
         }
-        if (heroOption.getTypeName().equals("Barbarian")) {
+        else if (heroOption.getTypeName().equals("Barbarian")) {
             applicationState.getGame().addBarbarian(heroName);
             SharedPreferenceHelper.saveApplicationState(this, applicationState);
             finish();
         }
-        if (heroOption.getTypeName().equals("Warlock")) {
+        else if (heroOption.getTypeName().equals("Warlock")) {
             applicationState.getGame().addWarlock(heroName);
             SharedPreferenceHelper.saveApplicationState(this, applicationState);
             finish();
         }
-        if (heroOption.getTypeName().equals("Cleric")) {
+        else if (heroOption.getTypeName().equals("Cleric")) {
             applicationState.getGame().addCleric(heroName);
             SharedPreferenceHelper.saveApplicationState(this, applicationState);
             finish();
         }
+        else {finish();}
 
-        else finish();
         }
-
         public void onBackButtonClicked(View button){
             finish();
         }

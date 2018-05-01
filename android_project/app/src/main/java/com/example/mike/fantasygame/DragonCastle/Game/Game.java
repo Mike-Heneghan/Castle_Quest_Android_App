@@ -1,20 +1,19 @@
 package com.example.mike.fantasygame.DragonCastle.Game;
 
-import com.example.mike.fantasygame.DragonCastle.Characters.Creatures.Creature;
-
 import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Fighters.Dwarf;
 import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Fighters.Knight;
 import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Fighters.Barbarian;
 import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Healers.Cleric;
 import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Hero;
-import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Mages.Spell;
+
 import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Mages.Warlock;
-import com.example.mike.fantasygame.DragonCastle.Characters.Narrator;
+
 import com.example.mike.fantasygame.DragonCastle.Room.Room;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Game {
+public class Game implements Serializable{
 
 
     private String name;

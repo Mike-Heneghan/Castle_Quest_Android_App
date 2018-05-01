@@ -2,9 +2,10 @@ package com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Fighters;
 
 import com.example.mike.fantasygame.DragonCastle.Characters.Character;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Dwarf extends Fighter{
+public class Dwarf extends Fighter implements Serializable {
     private ArrayList<Weapon> throwingAxes;
 
     public Dwarf(String name){

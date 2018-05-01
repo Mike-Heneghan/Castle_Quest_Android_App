@@ -1,6 +1,8 @@
 package com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Healers;
 
-public class Cleric extends Healer {
+import java.io.Serializable;
+
+public class Cleric extends Healer implements Serializable {
 
     public Cleric(String name){
         super(name);

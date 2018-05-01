@@ -2,7 +2,9 @@ package com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Fighters;
 
 import com.example.mike.fantasygame.DragonCastle.Characters.Character;
 
-public class Barbarian extends Fighter {
+import java.io.Serializable;
+
+public class Barbarian extends Fighter implements Serializable {
     private int rageChance;
 
     public Barbarian(String name){

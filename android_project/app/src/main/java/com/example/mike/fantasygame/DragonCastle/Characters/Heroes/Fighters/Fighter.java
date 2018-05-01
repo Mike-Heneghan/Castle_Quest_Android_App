@@ -3,7 +3,9 @@ package com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Fighters;
 import com.example.mike.fantasygame.DragonCastle.Characters.Character;
 import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Hero;
 
-public abstract class Fighter extends Hero {
+import java.io.Serializable;
+
+public abstract class Fighter extends Hero implements Serializable {
 
     protected Weapon weapon;
     protected Defence defence;

@@ -1,8 +1,9 @@
 package com.example.mike.fantasygame.DragonCastle.Characters;
 
+import java.io.Serializable;
 import java.util.Random;
 
-public abstract class Character {
+public class Character  implements Serializable {
 
     protected String name;
     protected int hp;

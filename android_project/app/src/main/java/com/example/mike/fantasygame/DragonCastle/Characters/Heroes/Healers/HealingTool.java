@@ -1,8 +1,10 @@
 package com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Healers;
 
+
+import java.io.Serializable;
 import java.util.Random;
 
-public enum HealingTool {
+public enum HealingTool implements Serializable{
 
     POTION(20, 8),
     BITTEROOT(10, 10),
