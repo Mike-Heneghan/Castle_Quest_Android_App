@@ -65,7 +65,7 @@ public class HeroOptionDetailedActivity extends AppCompatActivity {
         Intent intent = getIntent();
         HeroOption heroOption = ((HeroOption) intent.getSerializableExtra("heroOption"));
         ApplicationState applicationState = SharedPreferenceHelper.loadApplicationState(this);
-
+        applicationState.getGame();
         if(heroOption.getTypeName().toString().equals("Knight")) {
            applicationState.getGame().addKnight(heroName);
             SharedPreferenceHelper.saveApplicationState(this, applicationState);
