@@ -7,14 +7,15 @@ import java.io.Serializable;
 
 public class ApplicationState implements Serializable {
 
-    private Game game;
+//    private Game game;
+    private String bananas;
 
-    public ApplicationState(Game game){
-        this.game = game;
+    public ApplicationState(String bananas){
+        this.bananas = bananas;
     }
 
-    public Game getGame(){
-        return game;
+    public String getGame(){
+        return bananas;
     }
 
 }
