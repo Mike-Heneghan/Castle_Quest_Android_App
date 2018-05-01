@@ -15,6 +15,7 @@ public class HeroOptionDetailedActivity extends AppCompatActivity {
 
     private ImageView detailedHeroOptionImageView;
     private TextView detailedHeroTypeTextView;
+    private TextView detailedHeroTypeDescritption;
     private TextView detailedHeroHpTextView;
     private TextView heroMove1TextViewId;
     private TextView heroMove2TextViewId;
@@ -36,6 +37,19 @@ public class HeroOptionDetailedActivity extends AppCompatActivity {
 
         this.detailedHeroTypeTextView = findViewById(R.id.detailedHeroTypeTextViewId);
         detailedHeroTypeTextView.setText(heroOption.getTypeName().toString());
+
+        this.detailedHeroTypeDescritption = findViewById(R.id.detailedHeroTypeDescriptionId);
+        detailedHeroTypeDescritption.setText(heroOption.getTypeDescription().toString());
+
+        this.detailedHeroHpTextView = findViewById(R.id.detailedHeroHpTextViewId);
+        detailedHeroHpTextView.setText(heroOption.getHealthPoints().toString());
+
+        this.heroMove1TextViewId = findViewById(R.id.heroMove1TextViewId);
+        heroMove1TextViewId.setText(heroOption.getMove1Description().toString());
+
+        this.heroMove2TextViewId = findViewById(R.id.heroMove2TextViewId);
+        heroMove2TextViewId.setText(heroOption.getMove2Description().toString());
+
 
     }
 }
