@@ -107,6 +107,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="80dp"
         android:fontFamily="@font/bungee"
+        android:onClick="onAddHeroButtonClicked"
         android:text="@string/add_hero_to_party"
         android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"

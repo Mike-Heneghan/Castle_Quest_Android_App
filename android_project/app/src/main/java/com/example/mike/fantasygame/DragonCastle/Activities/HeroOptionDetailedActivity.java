@@ -40,50 +40,54 @@ public class HeroOptionDetailedActivity extends AppCompatActivity {
         this.detailedHeroOptionImageView = findViewById(R.id.detailedHeroOptionImageViewId);
 
         this.detailedHeroTypeTextView = findViewById(R.id.detailedHeroTypeTextViewId);
-        detailedHeroTypeTextView.setText(heroOption.getTypeName().toString());
+        detailedHeroTypeTextView.setText(heroOption.getTypeName());
 
         this.detailedHeroTypeDescritption = findViewById(R.id.detailedHeroTypeDescriptionId);
-        detailedHeroTypeDescritption.setText(heroOption.getTypeDescription().toString());
+        detailedHeroTypeDescritption.setText(heroOption.getTypeDescription());
 
         this.detailedHeroHpTextView = findViewById(R.id.detailedHeroHpTextViewId);
-        detailedHeroHpTextView.setText(heroOption.getHealthPoints().toString());
+        detailedHeroHpTextView.setText(heroOption.getHealthPoints());
 
         this.heroMove1TextViewId = findViewById(R.id.heroMove1TextViewId);
-        heroMove1TextViewId.setText(heroOption.getMove1Description().toString());
+        heroMove1TextViewId.setText(heroOption.getMove1Description());
 
         this.heroMove2TextViewId = findViewById(R.id.heroMove2TextViewId);
-        heroMove2TextViewId.setText(heroOption.getMove2Description().toString());
+        heroMove2TextViewId.setText(heroOption.getMove2Description());
         this.heroNameEditTextView = findViewById(R.id.heroNameEditTextViewId);
 
+        this.addCharacterToPartyButton = findViewById(R.id.addCharacterToPartyButtonId);
 
     }
 
-    public void onAddHeroButtonClicked(View button) {
+        public void onAddHeroButtonClicked(View button) {
         String heroName = heroNameEditTextView.getText().toString();
         Intent intent = getIntent();
         HeroOption heroOption = ((HeroOption) intent.getSerializableExtra("heroOption"));
         ApplicationState applicationState = SharedPreferenceHelper.loadApplicationState(this);
-        if (heroOption.getTypeName() == "Knight") {
+
+        if (heroOption.getTypeName().equals("Knight")) {
             applicationState.getGame().addKnight(heroName);
             SharedPreferenceHelper.saveApplicationState(this, applicationState);
+            finish();
         }
-        if (heroOption.getTypeName() == "Dwarf") {
+        if (heroOption.getTypeName().equals("Dwarf")) {
             applicationState.getGame().addDwarf(heroName);
             SharedPreferenceHelper.saveApplicationState(this, applicationState);
         }
-        if (heroOption.getTypeName() == "Barbarian") {
+        if (heroOption.getTypeName().equals("Barbarian")) {
             applicationState.getGame().addBarbarian(heroName);
             SharedPreferenceHelper.saveApplicationState(this, applicationState);
         }
-        if (heroOption.getTypeName() == "Warlock") {
+        if (heroOption.getTypeName().equals("Warlock")) {
             applicationState.getGame().addWarlock(heroName);
             SharedPreferenceHelper.saveApplicationState(this, applicationState);
         }
-        if (heroOption.getTypeName() == "Cleric") {
+        if (heroOption.getTypeName().equals("Cleric")) {
             applicationState.getGame().addCleric(heroName);
             SharedPreferenceHelper.saveApplicationState(this, applicationState);
         }
 
+        else ;
     }
 
 //    public void getHeroType(){
