@@ -38,6 +38,7 @@ public class DifficultyActivity extends AppCompatActivity {
         Game game = new Game(userName, 3);
         ApplicationState applicationState = new ApplicationState(game);
         SharedPreferenceHelper.saveApplicationState(this, applicationState);
+        ApplicationState applicationState1 = SharedPreferenceHelper.loadApplicationState(this);
         Intent intent2 = new Intent(this, CharacterSelectionActivity.class);
         intent.putExtra("guess", intent);
         startActivity(intent2);

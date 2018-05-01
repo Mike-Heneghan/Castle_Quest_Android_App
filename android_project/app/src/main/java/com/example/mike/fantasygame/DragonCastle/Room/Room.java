@@ -8,13 +8,14 @@ import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Hero;
 import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Treasure;
 import com.example.mike.fantasygame.DragonCastle.Characters.Narrator;
 
+import java.io.Serializable;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Random;
 
-public class Room {
+public class Room implements Serializable{
 
     private Character monster;
     private Treasure treasure;

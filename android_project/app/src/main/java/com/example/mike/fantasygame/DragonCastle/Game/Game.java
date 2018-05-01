@@ -12,9 +12,10 @@ import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Mages.Warlock
 import com.example.mike.fantasygame.DragonCastle.Characters.Narrator;
 import com.example.mike.fantasygame.DragonCastle.Room.Room;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Game {
+public class Game implements Serializable{
 
 
     private String name;

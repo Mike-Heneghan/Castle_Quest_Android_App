@@ -3,7 +3,9 @@ package com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Healers;
 import com.example.mike.fantasygame.DragonCastle.Characters.Character;
 import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Hero;
 
-public abstract class Healer extends Hero {
+import java.io.Serializable;
+
+public abstract class Healer extends Hero implements Serializable {
 
     private HealingTool healingTool;
 

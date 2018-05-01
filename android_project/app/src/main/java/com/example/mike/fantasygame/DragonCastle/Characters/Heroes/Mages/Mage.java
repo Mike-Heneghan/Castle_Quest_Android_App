@@ -5,7 +5,9 @@ import com.example.mike.fantasygame.DragonCastle.Characters.Creatures.CreatureTy
 import com.example.mike.fantasygame.DragonCastle.Characters.Character;
 import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Hero;
 
-public abstract class Mage extends Hero {
+import java.io.Serializable;
+
+public abstract class Mage extends Hero implements Serializable {
 
     private Spell spell;
     private Creature creature;

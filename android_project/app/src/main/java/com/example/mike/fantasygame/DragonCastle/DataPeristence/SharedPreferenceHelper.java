@@ -3,14 +3,19 @@ package com.example.mike.fantasygame.DragonCastle.DataPeristence;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import com.example.mike.fantasygame.DragonCastle.Game.Game;
 import com.example.mike.fantasygame.R;
 import com.google.gson.Gson;
 
-public class SharedPreferenceHelper {
+import java.io.Serializable;
+
+public class SharedPreferenceHelper implements Serializable {
 
     public static void saveApplicationState(Context context, ApplicationState state){
 
         SharedPreferences.Editor editor = context.getSharedPreferences(context.getString(R.string.app_name), Context.MODE_PRIVATE).edit();
+
+//        ApplicationState as = new ApplicationState(new Game("pawel", 2));
 
         Gson gson = new Gson();
         String json = gson.toJson(state);
@@ -22,7 +27,8 @@ public class SharedPreferenceHelper {
     public static ApplicationState loadApplicationState(Context context){
         SharedPreferences sharedPreferences = context.getSharedPreferences(context.getString(R.string.app_name), Context.MODE_PRIVATE);
     Gson gson = new Gson();
-    ApplicationState applicationState = gson.fromJson(sharedPreferences.getString("APPLICATION_STATER", "{}"), ApplicationState.class);
+    String jsonString = sharedPreferences.getString("APPLICATION_STATE", "{}");
+    ApplicationState applicationState = gson.fromJson(jsonString, ApplicationState.class);
     return applicationState;
     }
 }

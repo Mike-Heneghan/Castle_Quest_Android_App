@@ -1,8 +1,9 @@
 package com.example.mike.fantasygame.DragonCastle.Characters;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Narrator {
+public class Narrator  implements Serializable {
     private static Narrator instance = null;
 
     private ArrayList<String> story;

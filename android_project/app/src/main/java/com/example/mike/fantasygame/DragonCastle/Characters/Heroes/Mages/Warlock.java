@@ -4,9 +4,10 @@ import com.example.mike.fantasygame.DragonCastle.Characters.Character;
 import com.example.mike.fantasygame.DragonCastle.Characters.Creatures.Creature;
 import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Treasure;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Warlock extends Mage {
+public class Warlock extends Mage implements Serializable {
 
     public Warlock(String name){
         super(name);

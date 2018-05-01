@@ -2,7 +2,9 @@ package com.example.mike.fantasygame.DragonCastle.Characters.Creatures;
 
 import com.example.mike.fantasygame.DragonCastle.Characters.Character;
 
-public class Creature extends Character {
+import java.io.Serializable;
+
+public class Creature extends Character implements Serializable {
 
 
     private CreatureType type;

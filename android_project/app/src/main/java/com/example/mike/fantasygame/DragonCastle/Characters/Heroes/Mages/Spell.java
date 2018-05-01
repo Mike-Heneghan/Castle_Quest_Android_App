@@ -1,8 +1,9 @@
 package com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Mages;
 
+import java.io.Serializable;
 import java.util.Random;
 
-public enum Spell {
+public enum Spell implements Serializable {
 
 
     FIREBALL(30, 6),
