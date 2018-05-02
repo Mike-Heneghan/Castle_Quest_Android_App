@@ -7,9 +7,13 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Hero;
 import com.example.mike.fantasygame.DragonCastle.DataPeristence.ApplicationState;
 import com.example.mike.fantasygame.DragonCastle.DataPeristence.SharedPreferenceHelper;
+import com.example.mike.fantasygame.DragonCastle.FightList.FightItemAdapter;
 import com.example.mike.fantasygame.R;
+
+import java.util.ArrayList;
 
 public class FightActivity extends AppCompatActivity {
 
@@ -25,6 +29,13 @@ public class FightActivity extends AppCompatActivity {
 
         ApplicationState applicationState = SharedPreferenceHelper.loadApplicationState(this);
 
+        ArrayList<Hero> list = applicationState.getGame().getNewRooms().get(0).getHeroes();
+
+        FightItemAdapter fightItemAdapter = new FightItemAdapter(this,list);
+
+        ListView listView = findViewById(R.id.partyOfHeroesListViewId);
+        listView.setAdapter(fightItemAdapter);
+
         this.monsterImageView = findViewById(R.id.monsterImageViewId);
 
         this.monsterNameTextView = findViewById(R.id.monsterNameTextViewId);
@@ -34,7 +45,6 @@ public class FightActivity extends AppCompatActivity {
         String hp = "HP: " + applicationState.getGame().getNewRooms().get(0).getMonster().getHp();
         monsterHpTextView.setText(hp);
 
-        this.partyOfHeroesListView = findViewById(R.id.partyOfHeroesListViewId);
 
 
     }
