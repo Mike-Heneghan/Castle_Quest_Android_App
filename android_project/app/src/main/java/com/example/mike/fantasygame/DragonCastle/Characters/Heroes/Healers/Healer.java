@@ -5,7 +5,7 @@ import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Hero;
 
 import java.io.Serializable;
 
-public abstract class Healer extends Hero implements Serializable {
+public class Healer extends Hero implements Serializable {
 
     private HealingTool healingTool;
 
