@@ -44,6 +44,9 @@ public class FightItemAdapter extends ArrayAdapter<Hero> implements Serializable
 
         Button move2 = partyOfHeroesListViewId.findViewById(R.id.move2ButtonId);
 
+        move1.setTag(currentHero);
+        move2.setTag(currentHero);
+
         return partyOfHeroesListViewId;
     }
 }

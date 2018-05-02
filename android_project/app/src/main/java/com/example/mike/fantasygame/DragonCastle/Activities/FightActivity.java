@@ -3,6 +3,7 @@ package com.example.mike.fantasygame.DragonCastle.Activities;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -33,8 +34,8 @@ public class FightActivity extends AppCompatActivity {
 
         FightItemAdapter fightItemAdapter = new FightItemAdapter(this,list);
 
-        ListView listView = findViewById(R.id.partyOfHeroesListViewId);
-        listView.setAdapter(fightItemAdapter);
+        this.partyOfHeroesListView = findViewById(R.id.partyOfHeroesListViewId);
+        partyOfHeroesListView.setAdapter(fightItemAdapter);
 
         this.monsterImageView = findViewById(R.id.monsterImageViewId);
 
@@ -45,7 +46,21 @@ public class FightActivity extends AppCompatActivity {
         String hp = "HP: " + applicationState.getGame().getNewRooms().get(0).getMonster().getHp();
         monsterHpTextView.setText(hp);
 
+    }
 
+    public void onMove1ButtonClicked(View button){
+        ApplicationState applicationState = SharedPreferenceHelper.loadApplicationState(this);
+        applicationState.getGame().getNewRooms().get(0).monsterAttacks();
+        SharedPreferenceHelper.saveApplicationState(this, applicationState);
+        refreshHeroes();
+    }
+
+    public void refreshHeroes(){
+        ApplicationState applicationState = SharedPreferenceHelper.loadApplicationState(this);
+
+        ArrayList<Hero> list = applicationState.getGame().getNewRooms().get(0).getHeroes();
+        FightItemAdapter fightItemAdapter = new FightItemAdapter(this,list);
+        partyOfHeroesListView.setAdapter(fightItemAdapter);
 
     }
 }
