@@ -42,7 +42,7 @@ public class DifficultyActivity extends AppCompatActivity {
         String userName = extras.getString("userName", "Name");
         Context context = getApplicationContext();
         CharSequence text = userName + "'s new game Created!";
-        int duration = Toast.LENGTH_SHORT;
+        int duration = Toast.LENGTH_LONG;
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
     }

@@ -15,4 +15,5 @@
     <string name="add_hero_to_party">Add Hero</string>
     <string name="back_to_character_list">Back</string>
     <string name="hero_detail_view">Hero Details</string>
+    <string name="fight_activity">Fight!!!</string>
 </resources>
