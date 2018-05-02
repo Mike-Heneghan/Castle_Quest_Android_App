@@ -98,8 +98,9 @@ public class Game implements Serializable{
     }
 
     public void moveToNextRoom(){
+        if (heroes.isEmpty()){
         returnHeroesFromRoomToHallway();
-        moveCompletedRoomtoCompletedArrayList();
+        moveCompletedRoomtoCompletedArrayList();}
         addHeroesToFirstRoom();
     }
 

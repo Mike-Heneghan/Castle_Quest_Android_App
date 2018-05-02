@@ -68,7 +68,7 @@ public class HeroOptionDetailedActivity extends AppCompatActivity {
         applicationState.getGame();
         Context context = getApplicationContext();
         CharSequence text = heroOption.getTypeName() + " added!";
-        int duration = Toast.LENGTH_LONG;
+        int duration = Toast.LENGTH_SHORT;
         Toast toast = Toast.makeText(context, text, duration);
 
 

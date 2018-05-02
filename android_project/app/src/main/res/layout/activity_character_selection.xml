@@ -36,6 +36,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:fontFamily="@font/bungee"
+        android:onClick="onCreatePartyButtonPressed"
         android:text="@string/create_party"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
