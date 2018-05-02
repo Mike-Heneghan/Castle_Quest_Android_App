@@ -37,8 +37,11 @@ public class DifficultyActivity extends AppCompatActivity {
     }
 
     public void makeToast(){
+        Intent intent = getIntent();
+        Bundle extras = intent.getExtras();
+        String userName = extras.getString("userName", "Name");
         Context context = getApplicationContext();
-        CharSequence text = "New Game Created!";
+        CharSequence text = userName + "'s new game Created!";
         int duration = Toast.LENGTH_SHORT;
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
