@@ -12,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Fighters.Knight;
+import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Hero;
 import com.example.mike.fantasygame.DragonCastle.DataPeristence.ApplicationState;
 import com.example.mike.fantasygame.DragonCastle.DataPeristence.SharedPreferenceHelper;
 import com.example.mike.fantasygame.DragonCastle.HeroList.HeroOption;
@@ -74,6 +75,7 @@ public class HeroOptionDetailedActivity extends AppCompatActivity {
 
         if(heroOption.getTypeName().toString().equals("Knight")) {
            applicationState.getGame().addKnight(heroName);
+           Hero testHero  = applicationState.getGame().getHeroes().get(0);
             SharedPreferenceHelper.saveApplicationState(this, applicationState);
             toast.show();
             finish();
