@@ -1,11 +1,13 @@
 package com.example.mike.fantasygame.DragonCastle.Activities;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.mike.fantasygame.DragonCastle.DataPeristence.ApplicationState;
 import com.example.mike.fantasygame.DragonCastle.DataPeristence.SharedPreferenceHelper;
@@ -30,6 +32,16 @@ public class DifficultyActivity extends AppCompatActivity {
         easyDifficultyButton = findViewById(R.id.easyDifficultyButtonId);
         mediumDifficultyButton = findViewById(R.id.mediumDifficultyButtonId);
         hardDifficultyButton = findViewById(R.id.hardDifficultyButtonId);
+
+
+    }
+
+    public void makeToast(){
+        Context context = getApplicationContext();
+        CharSequence text = "New Game Created!";
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
     }
 
     public void onEasyDifficultyButtonClicked(View button) {
@@ -39,33 +51,32 @@ public class DifficultyActivity extends AppCompatActivity {
         SerializableGame gameAttempt = new SerializableGame(userName, 3);
         ApplicationState applicationState = new ApplicationState(gameAttempt);
         SharedPreferenceHelper.saveApplicationState(this, applicationState);
-//        ApplicationState applicationState1 = SharedPreferenceHelper.loadApplicationState(this);
+        makeToast();
         Intent intent2 = new Intent(this, CharacterSelectionActivity.class);
-        intent.putExtra("guess", intent);
         startActivity(intent2);
     }
-//
-//    public void onMediumDifficultyButtonClicked(View button){
-//        Intent intent = getIntent();
-//        Bundle extras = intent.getExtras();
-//        String userName = extras.getString("userName", "Name");
-//        Game game = new Game(userName, 5);
-//        ApplicationState applicationState = new ApplicationState(game);
-//        SharedPreferenceHelper.saveApplicationState(this, applicationState);
-//        Intent intent2 = new Intent(this, CharacterSelectionActivity.class);
-//        intent.putExtra("guess", intent);
-//        startActivity(intent2);
-//    }
-//
-//    public void onHardDifficultyButtonClicked(View button){
-//        Intent intent = getIntent();
-//        Bundle extras = intent.getExtras();
-//        String userName = extras.getString("userName", "Name");
-//        Game game = new Game(userName, 10);
-//        ApplicationState applicationState = new ApplicationState(game);
-//        SharedPreferenceHelper.saveApplicationState(this, applicationState);
-//        Intent intent2 = new Intent(this, CharacterSelectionActivity.class);
-//        intent.putExtra("guess", intent);
-//        startActivity(intent2);
-//    }
+
+    public void onMediumDifficultyButtonClicked(View button){
+        Intent intent = getIntent();
+        Bundle extras = intent.getExtras();
+        String userName = extras.getString("userName", "Name");
+        SerializableGame gameAttempt = new SerializableGame(userName, 5);
+        ApplicationState applicationState = new ApplicationState(gameAttempt);
+        SharedPreferenceHelper.saveApplicationState(this, applicationState);
+        makeToast();
+        Intent intent2 = new Intent(this, CharacterSelectionActivity.class);
+        startActivity(intent2);
+    }
+
+    public void onHardDifficultyButtonClicked(View button){
+        Intent intent = getIntent();
+        Bundle extras = intent.getExtras();
+        String userName = extras.getString("userName", "Name");
+        SerializableGame gameAttempt = new SerializableGame(userName, 10);
+        ApplicationState applicationState = new ApplicationState(gameAttempt);
+        SharedPreferenceHelper.saveApplicationState(this, applicationState);
+        makeToast();
+        Intent intent2 = new Intent(this, CharacterSelectionActivity.class);
+        startActivity(intent2);
+    }
 }

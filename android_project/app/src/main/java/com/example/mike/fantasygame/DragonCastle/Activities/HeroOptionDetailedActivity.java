@@ -66,30 +66,41 @@ public class HeroOptionDetailedActivity extends AppCompatActivity {
         HeroOption heroOption = ((HeroOption) intent.getSerializableExtra("heroOption"));
         ApplicationState applicationState = SharedPreferenceHelper.loadApplicationState(this);
         applicationState.getGame();
+        Context context = getApplicationContext();
+        CharSequence text = heroOption.getTypeName() + " added!";
+        int duration = Toast.LENGTH_LONG;
+        Toast toast = Toast.makeText(context, text, duration);
+
+
         if(heroOption.getTypeName().toString().equals("Knight")) {
            applicationState.getGame().addKnight(heroName);
             SharedPreferenceHelper.saveApplicationState(this, applicationState);
+            toast.show();
             finish();
         }
 
         else if (heroOption.getTypeName().equals("Dwarf")) {
             applicationState.getGame().addDwarf(heroName);
             SharedPreferenceHelper.saveApplicationState(this, applicationState);
+            toast.show();
             finish();
         }
         else if (heroOption.getTypeName().equals("Barbarian")) {
             applicationState.getGame().addBarbarian(heroName);
             SharedPreferenceHelper.saveApplicationState(this, applicationState);
+            toast.show();
             finish();
         }
         else if (heroOption.getTypeName().equals("Warlock")) {
             applicationState.getGame().addWarlock(heroName);
             SharedPreferenceHelper.saveApplicationState(this, applicationState);
+            toast.show();
             finish();
         }
         else if (heroOption.getTypeName().equals("Cleric")) {
             applicationState.getGame().addCleric(heroName);
             SharedPreferenceHelper.saveApplicationState(this, applicationState);
+            toast.show();
             finish();
         }
         else {finish();}
