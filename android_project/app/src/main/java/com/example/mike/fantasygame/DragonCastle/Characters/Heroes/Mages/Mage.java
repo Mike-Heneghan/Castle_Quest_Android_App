@@ -7,7 +7,7 @@ import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Hero;
 
 import java.io.Serializable;
 
-public abstract class Mage extends Hero implements Serializable {
+public class Mage extends Hero implements Serializable {
 
     private Spell spell;
     private Creature creature;

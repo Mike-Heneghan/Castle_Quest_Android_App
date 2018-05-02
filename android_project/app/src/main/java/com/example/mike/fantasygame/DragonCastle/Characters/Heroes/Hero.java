@@ -1,6 +1,9 @@
 package com.example.mike.fantasygame.DragonCastle.Characters.Heroes;
 
 import com.example.mike.fantasygame.DragonCastle.Characters.Character;
+import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Fighters.Defence;
+import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Fighters.Knight;
+import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Fighters.Weapon;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -15,6 +18,28 @@ public class Hero extends Character implements Serializable {
         this.type = type;
         this.inventory = new ArrayList<Treasure>();
         }
+    public class Knight extends Hero{
+
+        private Weapon weapon;
+        private Defence defence;
+
+        public Knight(String name, String type) {
+            super(name, "Attacker");
+            this.weapon = null;
+            this.defence = null;
+        }
+        public int stab(){
+            return 20;
+        }
+
+        //move2
+        //For the knight the stab has 100% chance of hitting.
+        public String signatureMove(Character characterToAttack){
+            {characterToAttack.takeDamage(this.stab());}
+            return this.getName() + " attacked " + characterToAttack.getName() + " successfully.";
+        }
+
+    }
 
     public void addToInventory(Treasure treasureItem){
         inventory.add(treasureItem);
