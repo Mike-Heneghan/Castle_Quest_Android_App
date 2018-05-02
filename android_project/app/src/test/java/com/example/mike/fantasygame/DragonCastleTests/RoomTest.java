@@ -98,13 +98,13 @@ public class RoomTest {
     }
 
 //    Random Answer Although Works Most of The Time
-//    @Test
-//    public void heroCanStandardAttackMonster(){
-//        fullroom.heroStandardMove(hero1);
-//        ArrayList<String> answer = new ArrayList<>();
-//        answer.add(hero1.getName() + " attacked " + fullroom.getMonster().getName() + " successfully.");
-//        assertEquals(answer, Narrator.getInstance().tellTale());
-//    }
+    @Test
+    public void heroCanStandardAttackMonster(){
+        fullroom.heroStandardMove(hero1);
+        ArrayList<String> answer = new ArrayList<>();
+        answer.add(hero1.getName() + " attacked " + fullroom.getMonster().getName() + " successfully.");
+        assertEquals(answer, Narrator.getInstance().tellTale());
+    }
 
     @Test
     public void deadHeroesDontAttack(){

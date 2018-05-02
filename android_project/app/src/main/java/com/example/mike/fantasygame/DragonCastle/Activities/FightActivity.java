@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Fighters.Knight;
 import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Hero;
 import com.example.mike.fantasygame.DragonCastle.DataPeristence.ApplicationState;
 import com.example.mike.fantasygame.DragonCastle.DataPeristence.SharedPreferenceHelper;
@@ -49,7 +50,11 @@ public class FightActivity extends AppCompatActivity {
     }
 
     public void onMove1ButtonClicked(View button){
+        Hero hero = ((Hero) button.getTag());
+        String heroName = hero.getName();
         ApplicationState applicationState = SharedPreferenceHelper.loadApplicationState(this);
+        Knight heroToAttack = ((Knight) applicationState.getGame().getNewRooms().get(0).getHeroes().get(0));
+        applicationState.getGame().getNewRooms().get(0).heroStandardMove(heroToAttack);
         applicationState.getGame().getNewRooms().get(0).monsterAttacks();
         SharedPreferenceHelper.saveApplicationState(this, applicationState);
         refreshHeroes();
@@ -57,10 +62,10 @@ public class FightActivity extends AppCompatActivity {
 
     public void refreshHeroes(){
         ApplicationState applicationState = SharedPreferenceHelper.loadApplicationState(this);
-
         ArrayList<Hero> list = applicationState.getGame().getNewRooms().get(0).getHeroes();
         FightItemAdapter fightItemAdapter = new FightItemAdapter(this,list);
         partyOfHeroesListView.setAdapter(fightItemAdapter);
-
     }
+
+
 }

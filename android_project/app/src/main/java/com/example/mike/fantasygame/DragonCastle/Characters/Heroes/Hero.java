@@ -41,4 +41,8 @@ public class Hero extends Character implements Serializable {
     public String getType() {
         return type;
     }
+
+    public String standardMove(Character characterToAttack){
+        return "";
+    }
 }
