@@ -78,6 +78,9 @@ public class HeroOptionDetailedActivity extends AppCompatActivity {
            Hero testHero  = applicationState.getGame().getHeroes().get(0);
             SharedPreferenceHelper.saveApplicationState(this, applicationState);
             toast.show();
+            ApplicationState newState = SharedPreferenceHelper.loadApplicationState(this);
+            Hero testHero2 = newState.getGame().getHeroes().get(0);
+            String name = testHero2.getName();
             finish();
         }
 
