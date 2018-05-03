@@ -22,5 +22,6 @@
     <string name="heroes_Defeated">Heroes Are Defeated!</string>
     <string name="vistory">Victory!</string>
     <string name="next_room">Next Room</string>
-
+    <string name="surviving_heroes">The Survivors Are:</string>
+    <string name="next_rooms">Next Room</string>
 </resources>

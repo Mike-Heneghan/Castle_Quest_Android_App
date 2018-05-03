@@ -31,7 +31,6 @@ public class FightActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fight);
 
-
         ArrayList<Hero> list = Game.getInstance().getNewRooms().get(0).getHeroes();
 
         FightItemAdapter fightItemAdapter = new FightItemAdapter(this,list);
@@ -102,6 +101,23 @@ public class FightActivity extends AppCompatActivity {
     }
 
     public void refreshMonster(){
+
+        int imageId = Game.getInstance().getNewRooms().get(0).getMonster().getImageId();
+        Drawable resourceImage = null;
+        if (imageId == 6){
+            resourceImage = getResources().getDrawable(R.drawable.six);
+        }
+        else if(imageId == 7){
+            resourceImage = getResources().getDrawable(R.drawable.seven);
+        }
+        else if(imageId == 8){
+            resourceImage = getResources().getDrawable(R.drawable.eight);
+        }
+        else if(imageId == 9){
+            resourceImage = getResources().getDrawable(R.drawable.nine);
+        }
+
+        monsterImageView.setImageDrawable(resourceImage);
         monsterNameTextView.setText(Game.getInstance().getNewRooms().get(0).getMonster().getName());
         String hpValue = "";
         if (Game.getInstance().getNewRooms().get(0).isMonsterDead()){
