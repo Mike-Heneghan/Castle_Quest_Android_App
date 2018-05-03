@@ -9,7 +9,7 @@ public enum CreatureType implements Serializable{
     TROLL("Trolly", 100, 30, 8, 90, 2, 6 ),
     DRAGON("Dragony", 150, 40, 6, 95, 2, 7),
     GIANTSPIDER("Spidery", 100, 25, 9, 80, 3, 8),
-    EX("The Dreaded Ex", 150, 20, 6, 60, 12, 9);
+    EX("Smug Ex", 150, 20, 6, 60, 12, 9);
 
     public final String name;
     public final int hp;

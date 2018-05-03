@@ -26,6 +26,7 @@
         android:fontFamily="@font/bungee"
         android:text="TextView"
         android:textColor="@android:color/black"
+        android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/fightHeroItemImageViewId"
         app:layout_constraintTop_toTopOf="@+id/fightHeroItemImageViewId" />
 
@@ -33,16 +34,14 @@
         android:id="@+id/fightHeroItemHpTextViewId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:fontFamily="@font/bungee"
         android:text="TextView"
         android:textColor="@android:color/black"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/fightHeroItemImageViewId"
-        app:layout_constraintStart_toEndOf="@+id/fightHeroItemImageViewId"
-        app:layout_constraintTop_toBottomOf="@+id/fightHeroItemNameTextViewId" />
+        app:layout_constraintStart_toEndOf="@+id/fightHeroItemImageViewId" />
 
     <Button
         android:id="@+id/move1ButtonId"
@@ -55,10 +54,10 @@
         android:fontFamily="@font/bungee"
         android:onClick="onMove1ButtonClicked"
         android:text="@string/move_one"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/fightHeroItemImageViewId"
         app:layout_constraintEnd_toStartOf="@+id/move2ButtonId"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.421" />
+        app:layout_constraintTop_toTopOf="@+id/fightHeroItemImageViewId" />
 
     <Button
         android:id="@+id/move2ButtonId"
@@ -71,8 +70,8 @@
         android:fontFamily="@font/bungee"
         android:onClick="onMove2ButtonClicked"
         android:text="@string/move_two"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/fightHeroItemImageViewId"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.421" />
+        app:layout_constraintTop_toTopOf="@+id/fightHeroItemImageViewId" />
 </android.support.constraint.ConstraintLayout>
