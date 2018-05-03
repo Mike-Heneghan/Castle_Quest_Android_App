@@ -28,6 +28,9 @@ public class Creature extends Character implements Serializable {
         return type;
     }
 
+    public int getImageId(){
+        return imageId;
+    }
 
     public int getMv1DamageValue() {
         return mv1DamageValue;

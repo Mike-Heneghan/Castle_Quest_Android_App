@@ -31,6 +31,9 @@ public class Character  implements Serializable {
         this.hp = hp;
     }
 
+    public int getImageId() {
+        return imageId;
+    }
 
     public int diceRoll() {
         Random rand = new Random();

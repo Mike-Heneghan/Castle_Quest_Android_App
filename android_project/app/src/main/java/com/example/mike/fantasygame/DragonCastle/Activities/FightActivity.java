@@ -2,6 +2,7 @@ package com.example.mike.fantasygame.DragonCastle.Activities;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -10,15 +11,10 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Fighters.Knight;
 import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Hero;
 import com.example.mike.fantasygame.DragonCastle.Characters.Narrator;
-import com.example.mike.fantasygame.DragonCastle.DataPeristence.ApplicationState;
-import com.example.mike.fantasygame.DragonCastle.DataPeristence.SharedPreferenceHelper;
 import com.example.mike.fantasygame.DragonCastle.FightList.FightItemAdapter;
 import com.example.mike.fantasygame.DragonCastle.Game.Game;
-import com.example.mike.fantasygame.GameOverActivity;
-import com.example.mike.fantasygame.HeroVictoryActivity;
 import com.example.mike.fantasygame.R;
 
 import java.util.ArrayList;
@@ -40,10 +36,28 @@ public class FightActivity extends AppCompatActivity {
 
         FightItemAdapter fightItemAdapter = new FightItemAdapter(this,list);
 
+        int imageId = Game.getInstance().getNewRooms().get(0).getMonster().getImageId();
+        Drawable resourceImage = null;
+
+        if (imageId == 6){
+            resourceImage = getResources().getDrawable(R.drawable.six);
+        }
+        else if(imageId == 7){
+            resourceImage = getResources().getDrawable(R.drawable.seven);
+        }
+        else if(imageId == 8){
+            resourceImage = getResources().getDrawable(R.drawable.eight);
+        }
+        else if(imageId == 9){
+            resourceImage = getResources().getDrawable(R.drawable.nine);
+        }
+
+
         this.partyOfHeroesListView = findViewById(R.id.partyOfHeroesListViewId);
         partyOfHeroesListView.setAdapter(fightItemAdapter);
 
         this.monsterImageView = findViewById(R.id.monsterImageViewId);
+        monsterImageView.setImageDrawable(resourceImage);
 
         this.monsterNameTextView = findViewById(R.id.monsterNameTextViewId);
         monsterNameTextView.setText(Game.getInstance().getNewRooms().get(0).getMonster().getName());

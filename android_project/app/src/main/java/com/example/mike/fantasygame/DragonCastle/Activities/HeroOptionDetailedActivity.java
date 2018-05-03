@@ -2,6 +2,7 @@ package com.example.mike.fantasygame.DragonCastle.Activities;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -40,7 +41,27 @@ public class HeroOptionDetailedActivity extends AppCompatActivity {
         Intent intent = getIntent();
         HeroOption heroOption = ((HeroOption) intent.getSerializableExtra("heroOption"));
 
+        int imageId = heroOption.getImageId();
+        Drawable resourceImage = null;
+
+        if (imageId == 1){
+            resourceImage = getResources().getDrawable(R.drawable.one);
+        }
+        else if(imageId == 2){
+            resourceImage = getResources().getDrawable(R.drawable.two);
+        }
+        else if(imageId == 3){
+            resourceImage = getResources().getDrawable(R.drawable.three);
+        }
+        else if(imageId == 4){
+            resourceImage = getResources().getDrawable(R.drawable.four);
+        }
+        else if(imageId == 5){
+            resourceImage = getResources().getDrawable(R.drawable.five);
+        }
+
         this.detailedHeroOptionImageView = findViewById(R.id.detailedHeroOptionImageViewId);
+        detailedHeroOptionImageView.setImageDrawable(resourceImage);
 
         this.detailedHeroTypeTextView = findViewById(R.id.detailedHeroTypeTextViewId);
         detailedHeroTypeTextView.setText(heroOption.getTypeName());

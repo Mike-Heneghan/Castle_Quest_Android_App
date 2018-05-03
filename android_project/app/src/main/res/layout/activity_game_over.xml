@@ -5,6 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/castle_background"
-    tools:context=".GameOverActivity">
+    tools:context=".DragonCastle.Activities.GameOverActivity">
 
 </android.support.constraint.ConstraintLayout>

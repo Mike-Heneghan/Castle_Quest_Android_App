@@ -33,11 +33,11 @@
             android:label="@string/fight_activity"
             android:parentActivityName=".DragonCastle.Activities.CharacterSelectionActivity" />
         <activity
-            android:name=".GameOverActivity"
+            android:name=".DragonCastle.Activities.GameOverActivity"
             android:label="@string/heroes_Defeated"
             android:parentActivityName=".DragonCastle.Activities.FightActivity"
             />
-        <activity android:name=".HeroVictoryActivity"
+        <activity android:name=".DragonCastle.Activities.HeroVictoryActivity"
             android:label="@string/hero_victory"
             android:parentActivityName=".DragonCastle.Activities.FightActivity"/>
     </application>
