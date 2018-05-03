@@ -49,7 +49,7 @@ public class FightActivity extends AppCompatActivity {
             resourceImage = getResources().getDrawable(R.drawable.eight);
         }
         else if(imageId == 9){
-            resourceImage = getResources().getDrawable(R.drawable.nine);
+//            resourceImage = getResources().getDrawable(R.drawable.nine);
         }
 
 
