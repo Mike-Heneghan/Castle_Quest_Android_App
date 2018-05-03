@@ -22,17 +22,14 @@
         android:id="@+id/monsterNameTextViewId"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
         android:fontFamily="@font/bungee_shade"
+        android:gravity="top|left|start"
         android:text="TextView"
         android:textColor="@android:color/black"
         android:textSize="36sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/monsterImageViewId"
         app:layout_constraintTop_toTopOf="@+id/monsterImageViewId" />
 
@@ -40,21 +37,16 @@
         android:id="@+id/monsterHpTextViewId"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
         android:fontFamily="@font/bungee_shade"
+        android:gravity="bottom|left|start"
         android:text="TextView"
         android:textColor="@android:color/black"
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/monsterImageViewId"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/monsterImageViewId"
-        app:layout_constraintTop_toBottomOf="@+id/monsterNameTextViewId" />
+        app:layout_constraintStart_toEndOf="@+id/monsterImageViewId" />
 
     <ListView
         android:id="@+id/partyOfHeroesListViewId"
@@ -70,6 +62,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/monsterHpTextViewId"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintTop_toBottomOf="@+id/monsterImageViewId" />
 </android.support.constraint.ConstraintLayout>

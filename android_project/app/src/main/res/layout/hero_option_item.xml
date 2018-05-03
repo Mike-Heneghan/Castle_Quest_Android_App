@@ -8,11 +8,11 @@
 
     <ImageView
         android:id="@+id/heroImageViewId"
-        android:layout_width="0dp"
-        android:layout_height="70dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/ic_launcher" />
@@ -21,30 +21,32 @@
         android:id="@+id/heroTypeNameTextViewId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/bungee"
+        android:gravity="left"
         android:text="TextView"
         android:textColor="@android:color/black"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/selectForDetailedViewButtonId"
-        app:layout_constraintHorizontal_bias="0.096"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/heroImageViewId"
         app:layout_constraintStart_toEndOf="@+id/heroImageViewId"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/heroImageViewId" />
 
     <Button
         android:id="@+id/selectForDetailedViewButtonId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/bungee"
         android:onClick="onHeroSelectButtonClicked"
         android:text="@string/select_hero"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/heroImageViewId"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/heroImageViewId" />
 </android.support.constraint.ConstraintLayout>
