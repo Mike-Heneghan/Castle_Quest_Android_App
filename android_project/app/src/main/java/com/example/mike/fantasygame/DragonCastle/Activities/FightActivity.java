@@ -62,7 +62,11 @@ public class FightActivity extends AppCompatActivity {
         monsterNameTextView.setText(Game.getInstance().getNewRooms().get(0).getMonster().getName());
 
         this.monsterHpTextView = findViewById(R.id.monsterHpTextViewId);
-        String hp = "HP: " + Game.getInstance().getNewRooms().get(0).getMonster().getHp();
+        String hpValue = "";
+        if (Game.getInstance().getNewRooms().get(0).getMonster().getHp() <= 0) {
+            hpValue = "" + 0; }
+        else { hpValue = "" + Game.getInstance().getNewRooms().get(0).getMonster().getHp(); }
+        String hp = "HP: " + hpValue;
         monsterHpTextView.setText(hp);
 
         refreshHeroes();
@@ -100,20 +104,17 @@ public class FightActivity extends AppCompatActivity {
         partyOfHeroesListView.setAdapter(fightItemAdapter);
     }
 
-    public void refreshMonster(){
+    public void refreshMonster() {
         int imageId = Game.getInstance().getNewRooms().get(0).getMonster().getImageId();
         Drawable resourceImage = null;
 
-        if (imageId == 6){
+        if (imageId == 6) {
             resourceImage = getResources().getDrawable(R.drawable.six);
-        }
-        else if(imageId == 7){
+        } else if (imageId == 7) {
             resourceImage = getResources().getDrawable(R.drawable.seven);
-        }
-        else if(imageId == 8){
+        } else if (imageId == 8) {
             resourceImage = getResources().getDrawable(R.drawable.eight);
-        }
-        else if(imageId == 9){
+        } else if (imageId == 9) {
             resourceImage = getResources().getDrawable(R.drawable.nine);
         }
         this.monsterImageView = findViewById(R.id.monsterImageViewId);
@@ -123,9 +124,13 @@ public class FightActivity extends AppCompatActivity {
         monsterNameTextView.setText(Game.getInstance().getNewRooms().get(0).getMonster().getName());
 
         this.monsterHpTextView = findViewById(R.id.monsterHpTextViewId);
-        String hp = "HP: " + Game.getInstance().getNewRooms().get(0).getMonster().getHp();
-        monsterHpTextView.setText(hp);
 
+        String hpValue = "";
+        if (Game.getInstance().getNewRooms().get(0).getMonster().getHp() <= 0) {
+            hpValue = "" + 0; }
+        else { hpValue = "" + Game.getInstance().getNewRooms().get(0).getMonster().getHp(); }
+        String hp = "HP: " + hpValue;
+        monsterHpTextView.setText(hp);
     }
 
     public void makeToast(){
