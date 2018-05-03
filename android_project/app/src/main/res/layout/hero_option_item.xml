@@ -30,6 +30,7 @@
         android:text="TextView"
         android:textColor="@android:color/black"
         android:textSize="30sp"
+        android:background="#66ADD8E6"
         app:layout_constraintBottom_toBottomOf="@+id/heroImageViewId"
         app:layout_constraintStart_toEndOf="@+id/heroImageViewId"
         app:layout_constraintTop_toTopOf="@+id/heroImageViewId" />

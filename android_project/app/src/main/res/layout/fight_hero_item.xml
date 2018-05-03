@@ -27,6 +27,7 @@
         android:text="TextView"
         android:textColor="@android:color/black"
         android:textSize="18sp"
+        android:background="#66ADD8E6"
         app:layout_constraintStart_toEndOf="@+id/fightHeroItemImageViewId"
         app:layout_constraintTop_toTopOf="@+id/fightHeroItemImageViewId" />
 
@@ -40,6 +41,7 @@
         android:text="TextView"
         android:textColor="@android:color/black"
         android:textSize="18sp"
+        android:background="#66ADD8E6"
         app:layout_constraintBottom_toBottomOf="@+id/fightHeroItemImageViewId"
         app:layout_constraintStart_toEndOf="@+id/fightHeroItemImageViewId" />
 
