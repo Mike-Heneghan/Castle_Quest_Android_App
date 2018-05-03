@@ -42,19 +42,19 @@ public class HeroOptionsAdapter extends ArrayAdapter<HeroOption>  implements Ser
         Drawable resourceImage = null;
 
         if (imageId == 1){
-            resourceImage = getResources(R.drawable.one);
+            resourceImage = getContext().getResources().getDrawable(R.drawable.one);
         }
         else if(imageId == 2){
-            resourceImage = getResourcese(R.drawable.two);
+            resourceImage = getContext().getResources().getDrawable(R.drawable.two);
         }
         else if(imageId == 3){
-            resourceImage = getResources().getDrawable(R.drawable.three);
+            resourceImage = getContext().getResources().getDrawable(R.drawable.three);
         }
         else if(imageId == 4){
-            resourceImage = getResources().getDrawable(R.drawable.four);
+            resourceImage = getContext().getResources().getDrawable(R.drawable.four);
         }
         else if(imageId == 5){
-            resourceImage = getResources.getDrawable(R.drawable.five);
+            resourceImage = getContext().getResources().getDrawable(R.drawable.five);
         }
 
         this.heroImageView = characterSelectionListViewId.findViewById(R.id.heroImageViewId);

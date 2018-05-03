@@ -35,28 +35,28 @@ public class FightItemAdapter extends ArrayAdapter<Hero> implements Serializable
 
         Hero currentHero = getItem(position);
 //
-//        int imageId = currentHero.getImageId();
-//        Drawable resourceImage = null;
-//
-//        if (imageId == 1){
-//            resourceImage = getResources(R.drawable.one);
-//        }
-//        else if(imageId == 2){
-//            resourceImage = getResources().getDrawable(R.drawable.two);
-//        }
-//        else if(imageId == 3){
-//            resourceImage = getResources().getDrawable(R.drawable.three);
-//        }
-//        else if(imageId == 4){
-//            resourceImage = getResources().getDrawable(R.drawable.four);
-//        }
-//        else if(imageId == 5){
-//            resourceImage = getResources().getDrawable(R.drawable.five);
-//        }
+        int imageId = currentHero.getImageId();
+        Drawable resourceImage = null;
+
+        if (imageId == 1){
+            resourceImage = getContext().getResources().getDrawable(R.drawable.one);
+        }
+        else if(imageId == 2){
+            resourceImage = getContext().getResources().getDrawable(R.drawable.two);
+        }
+        else if(imageId == 3){
+            resourceImage = getContext().getResources().getDrawable(R.drawable.three);
+        }
+        else if(imageId == 4){
+            resourceImage = getContext().getResources().getDrawable(R.drawable.four);
+        }
+        else if(imageId == 5){
+            resourceImage = getContext().getResources().getDrawable(R.drawable.five);
+        }
 
 
         ImageView heroImageView = partyOfHeroesListViewId.findViewById(R.id.fightHeroItemImageViewId);
-
+        heroImageView.setImageDrawable(resourceImage);
 
         TextView fightHeroName = partyOfHeroesListViewId.findViewById(R.id.fightHeroItemNameTextViewId);
         fightHeroName.setText(currentHero.getName().toString());
