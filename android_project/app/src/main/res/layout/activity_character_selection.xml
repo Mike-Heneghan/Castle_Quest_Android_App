@@ -20,7 +20,7 @@
         android:gravity="center_vertical|center_horizontal"
         android:text="@string/title_activity_character_selection"
         android:textColor="@android:color/black"
-        android:background="#8888"
+        android:background="#66ADD8E6"
         android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
