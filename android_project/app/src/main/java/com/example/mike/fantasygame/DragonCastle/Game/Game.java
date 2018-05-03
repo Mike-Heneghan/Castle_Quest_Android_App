@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 public class Game implements Serializable{
 
-
+    private static Game instance = null;
     private String name;
     private int roomsToGenerate;
     private ArrayList<Room> newRooms;
@@ -23,7 +23,7 @@ public class Game implements Serializable{
     private ArrayList<Hero> heroes;
 
 
-    public Game(String name, int roomsToGenerate){
+    protected Game(String name, int roomsToGenerate){
 
         this.name = name;
         this.roomsToGenerate = roomsToGenerate;
@@ -35,6 +35,17 @@ public class Game implements Serializable{
         }
         this.newRooms = generatedRooms;
         this.completedRooms = new ArrayList<>();
+    }
+
+    public static Game getFirstInstance(String name, int roomsToGenerate){
+        if(instance == null){
+            instance = new Game(name, roomsToGenerate);
+        }
+        return instance;
+    }
+
+    public static Game getInstance(){
+        return instance;
     }
 
     public String getName() {
