@@ -18,4 +18,9 @@
     <string name="fight_activity">Fight!!!</string>
     <string name="move_one">Move 1</string>
     <string name="move_two">Move 2</string>
+    <string name="hero_victory">Heroes Are Victorious!</string>
+    <string name="heroes_Defeated">Heroes Are Defeated!</string>
+    <string name="vistory">Victory!</string>
+    <string name="next_room">Next Room</string>
+
 </resources>

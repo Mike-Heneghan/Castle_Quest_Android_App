@@ -69,6 +69,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/bungee"
+        android:onClick="onMove2ButtonClicked"
         android:text="@string/move_two"
         app:layout_constraintBottom_toBottomOf="@+id/fightHeroItemImageViewId"
         app:layout_constraintEnd_toEndOf="parent"

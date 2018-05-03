@@ -70,12 +70,25 @@ public class Room implements Serializable{
         else return false;
     }
 
+    public Boolean isMonsterDead(){
+        if (monster.getHp() <= 0){
+            return true;
+        }
+        return false;
+    }
+
+    public void heroesCollectTreasure(){
+        returnAliveHeroes().get(0).addToInventory(treasure);
+    }
+
     public void heroStandardMove(Hero hero){
         if (hero.getHp() > 0){
             if (hero.getType() == "Healer"){
                 Narrator.getInstance().addStoryLine(hero.standardMove(heroWithLowestHealth()));
             }
-            else Narrator.getInstance().addStoryLine(hero.standardMove(monster));
+            else if (hero.getType() == "Attacker"){
+                Narrator.getInstance().addStoryLine(hero.standardMove(monster));
+            }
         }
         else Narrator.getInstance().addStoryLine(hero.getName() + " is dead!");
 
@@ -137,6 +150,16 @@ public class Room implements Serializable{
     public int returnFiftyFifty(){
         Random rand = new Random();
         return (1 + rand.nextInt((2 - 1) + 1));
+    }
+
+    public Hero getHeroByName(String heroName){
+        Hero heroToFind = null;
+        for (Hero h: heroes) {
+            if (h.getName() == heroName){
+                heroToFind = h;
+            }
+        }
+        return heroToFind;
     }
 
 //    //For encounter- collectTreasure to be used as a conditional if any heroes remain alive.

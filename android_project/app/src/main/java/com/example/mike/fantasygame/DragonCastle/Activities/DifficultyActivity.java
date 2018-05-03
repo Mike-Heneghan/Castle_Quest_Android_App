@@ -51,9 +51,7 @@ public class DifficultyActivity extends AppCompatActivity {
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
         String userName = extras.getString("userName", "Name");
-        Game gameAttempt = Game.getFirstInstance(userName, 3);
-        ApplicationState applicationState = new ApplicationState(gameAttempt);
-        SharedPreferenceHelper.saveApplicationState(this, applicationState);
+        Game.getFirstInstance(userName, 3);
         makeToast();
         Intent intent2 = new Intent(this, CharacterSelectionActivity.class);
         startActivity(intent2);
@@ -63,9 +61,7 @@ public class DifficultyActivity extends AppCompatActivity {
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
         String userName = extras.getString("userName", "Name");
-        Game gameAttempt = Game.getFirstInstance(userName, 5);
-        ApplicationState applicationState = new ApplicationState(gameAttempt);
-        SharedPreferenceHelper.saveApplicationState(this, applicationState);
+        Game.getFirstInstance(userName, 5);
         makeToast();
         Intent intent2 = new Intent(this, CharacterSelectionActivity.class);
         startActivity(intent2);
@@ -75,9 +71,7 @@ public class DifficultyActivity extends AppCompatActivity {
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
         String userName = extras.getString("userName", "Name");
-       Game gameAttempt = Game.getFirstInstance(userName, 10);
-        ApplicationState applicationState = new ApplicationState(gameAttempt);
-        SharedPreferenceHelper.saveApplicationState(this, applicationState);
+       Game.getFirstInstance(userName, 10);
         makeToast();
         Intent intent2 = new Intent(this, CharacterSelectionActivity.class);
         startActivity(intent2);

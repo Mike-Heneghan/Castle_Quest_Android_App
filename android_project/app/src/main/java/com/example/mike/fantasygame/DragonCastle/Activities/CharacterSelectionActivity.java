@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import com.example.mike.fantasygame.DragonCastle.DataPeristence.ApplicationState;
 import com.example.mike.fantasygame.DragonCastle.DataPeristence.SharedPreferenceHelper;
+import com.example.mike.fantasygame.DragonCastle.Game.Game;
 import com.example.mike.fantasygame.DragonCastle.HeroList.HeroOption;
 import com.example.mike.fantasygame.DragonCastle.HeroList.HeroOptionsAdapter;
 import com.example.mike.fantasygame.DragonCastle.HeroList.HeroOptionsData;
@@ -42,17 +43,28 @@ public class CharacterSelectionActivity extends AppCompatActivity {
     }
 
     public void onCreatePartyButtonPressed(View button){
-        ApplicationState applicationState = SharedPreferenceHelper.loadApplicationState(this);
-        applicationState.getGame().moveToNextRoom();
-        SharedPreferenceHelper.saveApplicationState(this, applicationState);
-        makeToast();
-        Intent intent2 = new Intent(this, FightActivity.class);
-        startActivity(intent2);
+        if (Game.getInstance().getHeroes().isEmpty()){
+            addCharactersToast();
+        }
+        else {
+            Game.getInstance().moveToNextRoom();
+            makeFightToast();
+            Intent intent2 = new Intent(this, FightActivity.class);
+            startActivity(intent2);
+        }
     }
 
-    public void makeToast(){
+    public void makeFightToast(){
         Context context = getApplicationContext();
         CharSequence text = "Fight!";
+        int duration = Toast.LENGTH_LONG;
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
+    }
+
+    public void addCharactersToast(){
+        Context context = getApplicationContext();
+        CharSequence text = "Add Characters to Progress!";
         int duration = Toast.LENGTH_LONG;
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
