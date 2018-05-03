@@ -101,9 +101,9 @@ public class FightActivity extends AppCompatActivity {
     }
 
     public void refreshMonster(){
-
         int imageId = Game.getInstance().getNewRooms().get(0).getMonster().getImageId();
         Drawable resourceImage = null;
+
         if (imageId == 6){
             resourceImage = getResources().getDrawable(R.drawable.six);
         }
@@ -116,16 +116,16 @@ public class FightActivity extends AppCompatActivity {
         else if(imageId == 9){
             resourceImage = getResources().getDrawable(R.drawable.nine);
         }
-
+        this.monsterImageView = findViewById(R.id.monsterImageViewId);
         monsterImageView.setImageDrawable(resourceImage);
+
+        this.monsterNameTextView = findViewById(R.id.monsterNameTextViewId);
         monsterNameTextView.setText(Game.getInstance().getNewRooms().get(0).getMonster().getName());
-        String hpValue = "";
-        if (Game.getInstance().getNewRooms().get(0).isMonsterDead()){
-            hpValue = "0";
-        }
-        else hpValue = "" +Game.getInstance().getNewRooms().get(0).getMonster().getHp();
-        String hpToShow = "HP: " + hpValue;
-        monsterHpTextView.setText(hpToShow);
+
+        this.monsterHpTextView = findViewById(R.id.monsterHpTextViewId);
+        String hp = "HP: " + Game.getInstance().getNewRooms().get(0).getMonster().getHp();
+        monsterHpTextView.setText(hp);
+
     }
 
     public void makeToast(){
