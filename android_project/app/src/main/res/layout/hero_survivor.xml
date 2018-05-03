@@ -26,6 +26,7 @@
         android:fontFamily="@font/bungee"
         android:text="TextView"
         android:textColor="@android:color/black"
+        android:background="#66ADD8E6"
         android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/survivourHeroItemImageViewId3"
         app:layout_constraintTop_toTopOf="@+id/survivourHeroItemImageViewId3" />
@@ -39,6 +40,7 @@
         android:fontFamily="@font/bungee"
         android:text="TextView"
         android:textColor="@android:color/black"
+        android:background="#66ADD8E6"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/survivourHeroItemImageViewId3"
         app:layout_constraintStart_toEndOf="@+id/survivourHeroItemImageViewId3" />
