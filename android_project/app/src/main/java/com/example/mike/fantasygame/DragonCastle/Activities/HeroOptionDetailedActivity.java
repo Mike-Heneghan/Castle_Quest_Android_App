@@ -15,6 +15,7 @@ import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Fighters.Knig
 import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Hero;
 import com.example.mike.fantasygame.DragonCastle.DataPeristence.ApplicationState;
 import com.example.mike.fantasygame.DragonCastle.DataPeristence.SharedPreferenceHelper;
+import com.example.mike.fantasygame.DragonCastle.Game.Game;
 import com.example.mike.fantasygame.DragonCastle.HeroList.HeroOption;
 import com.example.mike.fantasygame.R;
 
@@ -65,8 +66,6 @@ public class HeroOptionDetailedActivity extends AppCompatActivity {
         String heroName = heroNameEditTextView.getText().toString();
         Intent intent = getIntent();
         HeroOption heroOption = ((HeroOption) intent.getSerializableExtra("heroOption"));
-        ApplicationState applicationState = SharedPreferenceHelper.loadApplicationState(this);
-        applicationState.getGame();
         Context context = getApplicationContext();
         CharSequence text = heroOption.getTypeName() + " added!";
         int duration = Toast.LENGTH_SHORT;
@@ -74,37 +73,28 @@ public class HeroOptionDetailedActivity extends AppCompatActivity {
 
 
         if(heroOption.getTypeName().toString().equals("Knight")) {
-           applicationState.getGame().addKnight(heroName);
-           Hero testHero  = applicationState.getGame().getHeroes().get(0);
-            SharedPreferenceHelper.saveApplicationState(this, applicationState);
+            Game.getInstance().addKnight(heroName);
             toast.show();
-            ApplicationState newState = SharedPreferenceHelper.loadApplicationState(this);
-            Hero testHero2 = newState.getGame().getHeroes().get(0);
-            String name = testHero2.getName();
             finish();
         }
 
         else if (heroOption.getTypeName().equals("Dwarf")) {
-            applicationState.getGame().addDwarf(heroName);
-            SharedPreferenceHelper.saveApplicationState(this, applicationState);
+            Game.getInstance().addDwarf(heroName);
             toast.show();
             finish();
         }
         else if (heroOption.getTypeName().equals("Barbarian")) {
-            applicationState.getGame().addBarbarian(heroName);
-            SharedPreferenceHelper.saveApplicationState(this, applicationState);
+            Game.getInstance().addBarbarian(heroName);
             toast.show();
             finish();
         }
         else if (heroOption.getTypeName().equals("Warlock")) {
-            applicationState.getGame().addWarlock(heroName);
-            SharedPreferenceHelper.saveApplicationState(this, applicationState);
+            Game.getInstance().addWarlock(heroName);
             toast.show();
             finish();
         }
         else if (heroOption.getTypeName().equals("Cleric")) {
-            applicationState.getGame().addCleric(heroName);
-            SharedPreferenceHelper.saveApplicationState(this, applicationState);
+            Game.getInstance().addCleric(heroName);
             toast.show();
             finish();
         }

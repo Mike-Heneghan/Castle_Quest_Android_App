@@ -3,7 +3,6 @@ package com.example.mike.fantasygame.DragonCastle.DataPeristence;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.example.mike.fantasygame.DragonCastle.Game.SerializableGame;
 import com.example.mike.fantasygame.R;
 import com.google.gson.Gson;
 

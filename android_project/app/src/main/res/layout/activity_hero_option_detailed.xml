@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/castle_background"
     tools:context=".DragonCastle.Activities.HeroOptionDetailedActivity">
 
     <ImageView
@@ -165,6 +166,7 @@
         android:text="TextView"
         android:textColor="@android:color/black"
         android:textSize="18sp"
+        android:backgroundTint"@android:color/holo_blue_dark"
         app:layout_constraintBottom_toTopOf="@+id/heroMove1TextViewId"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
