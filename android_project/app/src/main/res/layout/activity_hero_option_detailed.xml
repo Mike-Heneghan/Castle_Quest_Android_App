@@ -166,7 +166,6 @@
         android:text="TextView"
         android:textColor="@android:color/black"
         android:textSize="18sp"
-        android:backgroundTint"@android:color/holo_blue_dark"
         app:layout_constraintBottom_toTopOf="@+id/heroMove1TextViewId"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
