@@ -1,6 +1,7 @@
 package com.example.mike.fantasygame.DragonCastle.FightList;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,8 +11,10 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextClock;
 import android.widget.TextView;
+import android.graphics.drawable.Drawable;
 
 import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Hero;
+import com.example.mike.fantasygame.DragonCastle.Game.Game;
 import com.example.mike.fantasygame.R;
 
 import java.io.Serializable;
@@ -31,8 +34,29 @@ public class FightItemAdapter extends ArrayAdapter<Hero> implements Serializable
         }
 
         Hero currentHero = getItem(position);
+//
+//        int imageId = currentHero.getImageId();
+//        Drawable resourceImage = null;
+//
+//        if (imageId == 1){
+//            resourceImage = getResources(R.drawable.one);
+//        }
+//        else if(imageId == 2){
+//            resourceImage = getResources().getDrawable(R.drawable.two);
+//        }
+//        else if(imageId == 3){
+//            resourceImage = getResources().getDrawable(R.drawable.three);
+//        }
+//        else if(imageId == 4){
+//            resourceImage = getResources().getDrawable(R.drawable.four);
+//        }
+//        else if(imageId == 5){
+//            resourceImage = getResources().getDrawable(R.drawable.five);
+//        }
+
 
         ImageView heroImageView = partyOfHeroesListViewId.findViewById(R.id.fightHeroItemImageViewId);
+
 
         TextView fightHeroName = partyOfHeroesListViewId.findViewById(R.id.fightHeroItemNameTextViewId);
         fightHeroName.setText(currentHero.getName().toString());

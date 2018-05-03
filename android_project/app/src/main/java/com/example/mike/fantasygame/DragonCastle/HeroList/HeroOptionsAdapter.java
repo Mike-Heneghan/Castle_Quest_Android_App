@@ -1,6 +1,8 @@
 package com.example.mike.fantasygame.DragonCastle.HeroList;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,8 +15,11 @@ import com.example.mike.fantasygame.R;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.ResourceBundle;
 
-public class HeroOptionsAdapter extends ArrayAdapter<HeroOption> implements Serializable {
+public class HeroOptionsAdapter extends ArrayAdapter<HeroOption>  implements Serializable {
+
+    private ImageView heroImageView;
 
     public HeroOptionsAdapter(Context context, ArrayList<HeroOption> heroOptions){
         super(context, 0, heroOptions);
@@ -27,9 +32,33 @@ public class HeroOptionsAdapter extends ArrayAdapter<HeroOption> implements Seri
             characterSelectionListViewId = LayoutInflater.from(getContext()).inflate(R.layout.hero_option_item, parent, false);
         }
 
+
+
+
         HeroOption currentHeroOption = getItem(position);
 // Need to add icon drawable resources.
-        ImageView heroImageView = characterSelectionListViewId.findViewById(R.id.heroImageViewId);
+
+        int imageId = currentHeroOption.getImageId();
+        Drawable resourceImage = null;
+
+        if (imageId == 1){
+            resourceImage = getResources(R.drawable.one);
+        }
+        else if(imageId == 2){
+            resourceImage = getResourcese(R.drawable.two);
+        }
+        else if(imageId == 3){
+            resourceImage = getResources().getDrawable(R.drawable.three);
+        }
+        else if(imageId == 4){
+            resourceImage = getResources().getDrawable(R.drawable.four);
+        }
+        else if(imageId == 5){
+            resourceImage = getResources.getDrawable(R.drawable.five);
+        }
+
+        this.heroImageView = characterSelectionListViewId.findViewById(R.id.heroImageViewId);
+        heroImageView.setImageDrawable(resourceImage);
 
         TextView heroTypeNameTextView = characterSelectionListViewId.findViewById(R.id.heroTypeNameTextViewId);
         heroTypeNameTextView.setText(currentHeroOption.getTypeName().toString());
