@@ -16,7 +16,6 @@ public abstract class Mage extends Hero implements Serializable {
         super(name, "Attacker");
         this.spell = Spell.getRandomSpell();
         this.creature = new Creature(CreatureType.getRandomCreature());
-        //Massive problem still with this random element for newing up objects. Need to fix.
 
     }
 
