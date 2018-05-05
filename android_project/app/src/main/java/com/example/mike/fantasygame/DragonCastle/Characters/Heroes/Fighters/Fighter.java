@@ -5,7 +5,7 @@ import com.example.mike.fantasygame.DragonCastle.Characters.Heroes.Hero;
 
 import java.io.Serializable;
 
-public class Fighter extends Hero implements Serializable {
+public abstract class Fighter extends Hero implements Serializable {
 
     protected Weapon weapon;
     protected Defence defence;
